@@ -25,6 +25,8 @@ def parse_args() -> Namespace:
     )
     parser.add_argument('--split', type=str, default='train')
 
+    parser.add_argument('--max_tokens', type=int, required=True)
+
     parser.add_argument('--tokenizer', type=str, required=False, default=None)
     parser.add_argument('--bos_text', type=str, required=False, default=None)
     parser.add_argument('--eos_text', type=str, required=False, default=None)
@@ -42,6 +44,7 @@ if __name__ == '__main__':
         compression=args.compression,
         concat_tokens=args.concat_tokens,
         split=args.split,
+        max_tokens=args.max_tokens,
         tokenizer=args.tokenizer,
         bos_text=args.bos_text,
         eos_text=args.eos_text,

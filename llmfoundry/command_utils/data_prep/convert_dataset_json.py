@@ -96,6 +96,7 @@ def convert_dataset_json(
     compression: Optional[str],
     concat_tokens: Optional[int],
     split: str,
+    max_tokens: int,
     tokenizer: Optional[str] = None,
     bos_text: str = '',
     eos_text: str = '',
@@ -139,21 +140,35 @@ def convert_dataset_json(
         tokenizer=built_tokenizer,
     )
 
-    print('here')
-
     # Write samples
     print(f'Converting to MDS format...')
     print(
         f'Note that the progress bar is based on the dataset length before tokenization.',
     )
     print(f'It will finish at a value below 100% if tokenizing')
+
+    total_num_tokens = 0
+
     with MDSWriter(
         columns=columns,
         out=os.path.join(out_root),
         compression=compression,
     ) as out:
         for sample in tqdm(dataset):
+
+            # get num_tokens and remove it before save the sample
+            num_tokens = sample.pop("num_tokens")
+
             out.write(sample)
+
+            total_num_tokens += num_tokens
+
+            if total_num_tokens >= max_tokens:
+                print(f"Max tokens {total_num_tokens} reached, stop saving samples.")
+                break
+        
+        print(f"Processing done, saved {total_num_tokens} tokens.")
+
 
 
 def convert_dataset_json_from_args(
@@ -162,6 +177,7 @@ def convert_dataset_json_from_args(
     compression: Optional[str],
     concat_tokens: Optional[int],
     split: str,
+    max_tokens: int,
     tokenizer: Optional[str] = None,
     bos_text: Optional[str] = None,
     eos_text: Optional[str] = None,
@@ -176,6 +192,7 @@ def convert_dataset_json_from_args(
         compression (Optional[str]): Compression type, if any
         concat_tokens (Optional[int]): Convert text to tokens and concatenate up to this many tokens
         split (str): Dataset split to process
+        max_tokens (int): Max number of tokens to process
         tokenizer (Optional[str]): Tokenizer name
         bos_text (Optional[str]): Text to insert at the beginning of each sequence
         eos_text (Optional[str]): Text to insert at the end of each sequence
@@ -215,6 +232,7 @@ def convert_dataset_json_from_args(
         compression=compression,
         concat_tokens=concat_tokens,
         split=split,
+        max_tokens=max_tokens,
         tokenizer=tokenizer,
         bos_text=bos_text,
         eos_text=eos_text,

@@ -446,7 +446,7 @@ if __name__ == '__main__':
         print(f'Reading {args.split} split from {args.local_path}')
 
     cfg = {
-        'name': 'text',
+        # 'name': 'text',
         'dataset': {
             'local': args.local_path,
             'remote': args.remote_path,
@@ -477,7 +477,7 @@ if __name__ == '__main__':
         print('\n')
         print('#' * 20, f'Batch {batch_ix}', '#' * 20)
         for k, v in batch.items():
-            print(k, v.shape, v.dtype)
+            print(k, v)
         for sample_ix, token_sample in enumerate(batch['input_ids']):
             print('-' * 20, f' Sample {sample_ix} ', '-' * 20)
             print(tokenizer.decode(token_sample))
