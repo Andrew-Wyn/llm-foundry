@@ -59,7 +59,7 @@ master_addr=\$(scontrol show hostnames \$SLURM_JOB_NODELIST | head -n 1)
 
 module load profile/deeplrn cuda/12.1
 source $PYENV/bin/activate
-cd $BASE_DIR/minerva/llm-foundry/
+cd $BASE_DIR
 
 export NPROCS=4
 export MASTER_ADDR=\$master_addr

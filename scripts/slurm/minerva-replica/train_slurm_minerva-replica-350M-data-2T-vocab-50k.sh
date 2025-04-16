@@ -17,7 +17,7 @@ master_addr=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
 
 module load profile/deeplrn cuda/12.1
 source /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/llmfoundry-venv/bin/activate
-cd /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/minerva/llm-foundry/
+cd /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/
 
 export NPROCS=4
 export MASTER_ADDR=$master_addr

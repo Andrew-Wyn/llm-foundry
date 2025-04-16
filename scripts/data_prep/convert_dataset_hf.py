@@ -41,6 +41,7 @@ def parse_args() -> Namespace:
     parser.add_argument('--eos_text', type=str, required=False, default=None)
     parser.add_argument('--no_wrap', default=False, action='store_true')
     parser.add_argument('--num_workers', type=int, required=False, default=None)
+    parser.add_argument('--max_tokens', type=int, required=False, default=None)
 
     parsed = parser.parse_args()
     return parsed
@@ -61,4 +62,5 @@ if __name__ == '__main__':
         eos_text=args.eos_text,
         no_wrap=args.no_wrap,
         num_workers=args.num_workers,
+        max_tokens=args.max_tokens,
     )
