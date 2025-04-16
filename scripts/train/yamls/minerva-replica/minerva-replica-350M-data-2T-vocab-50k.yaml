@@ -6,7 +6,7 @@ variables:
   max_seq_len: 4096 #16384 #2048  #2048
   global_seed: 17
   # run_name: minerva-replica-350m-900B_it-900B_en-200B-code
-  run_name: minerva-replica-350M-2T
+  run_name: minerva-replica-350M-data-2T-vocab-50k
   rank: 0
 # If left blank, will be read from env var $RUN_NAME
 max_seq_len: ${variables.max_seq_len}
@@ -158,7 +158,7 @@ train_loader:
 
 scheduler:
   name: cosine_with_warmup
-  t_warmup: 1ba #  llama2 uses 2000 steps
+  t_warmup: 1ba #  llama2 uses 2000 steps --> now using a single ba to speed up vocab adaptation
   alpha_f: 0.1
 # scheduler:
 #   name: constant_with_warmup
@@ -183,7 +183,7 @@ algorithms:
 # ~2T is 2481170561843
 # max duration is then 2481170561843 / (4096 * 1024) = 591_558
 # max_duration: 591558ba
-max_duration: 500ba
+max_duration: 1ba
 # eval_interval: 1000ba
 eval_interval: 0
 eval_first: false
@@ -236,7 +236,7 @@ callbacks:
   hf_checkpointer:
     overwrite: true
     precision: bfloat16
-    save_folder: /leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/huggingface-cpt/${variables.run_name}
+    save_folder: /leonardo_scratch/large/userexternal/lcolosi0/minerva/replica/huggingface-cpt/${variables.run_name}
     save_interval: 500ba
 
 loggers:
@@ -249,7 +249,9 @@ loggers:
 # Checkpoint to local filesystem or remote object store
 save_interval: 500ba
 save_num_checkpoints_to_keep: -1 # Important, this cleans up checkpoints saved to DISK
-save_folder: /leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/runs/${variables.run_name}
+save_folder: /leonardo_scratch/large/userexternal/lcolosi0/minerva/replica/runs/${variables.run_name}
+
+# Uncomment this line to load a checkpoint
 # load_path: /leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/runs/${variables.run_name}/latest-rank${variables.rank}.pt
 load_weights_only: False
 
