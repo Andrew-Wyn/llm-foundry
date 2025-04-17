@@ -76,3 +76,20 @@ python $BASE_DIR/scripts/data_prep/convert_dataset_hf.py \
     # --compression zstd \
     # --bos_text "<s>" \
     # --eos_text "</s>" \
+
+
+# List of dataset paths:
+#
+RedPajama-v2: /leonardo/prod/data/ai/red pajama/2.0
+• CulturaX: /leonardo/prod/data/ai/culturax/2309
+• Wikipedia: wikimedia/wikipedia (*)
+• Gutenberg (IT): /leonardo scratch/fast/IscrB medit/data/books it/gutenberg.jsonl
+• Wikisource (IT):
+/leonardo scratch/fast/IscrB medit/data/books it/wikisource it books clean.jsonl
+EurLex: NLP-AUEB/eurlex (*)
+Gazzetta Ufficiale: /leonardo scratch/fast/IscrB medit/data/gazetta/gazetta.jsonl
+FineWeb: HuggingFaceFW/fineweb (*)
+ArXiv: /leonardo scratch/fast/IscrB medit/data/arxiv
+Gutenberg (EN): /leonardo scratch/fast/IscrB medit/data/books en/gutenberg.jsonl
+StackExchange: /leonardo/prod/data/ai/red pajama/2.0
+The StackV2: /leonardo scratch/fast/IscrB medit/data/starcoder2 smol batches
