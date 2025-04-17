@@ -164,9 +164,11 @@ class ConcatTokensDataset(AbstractConcatTokensDataset):
             while len(buffer) >= self.max_length:
                 concat_sample = buffer[:self.max_length]
                 buffer = buffer[self.max_length:] if self.should_wrap else []
+                sample_tokenized = np.asarray(concat_sample, dtype=np.int32)
                 yield {
                     # convert to ndarray to store in MDS format
-                    'tokens': np.asarray(concat_sample, dtype=np.int32),
+                    'tokens': sample_tokenized,
+                    "num_tokens": len(sample_tokenized)
                 }
 
 
