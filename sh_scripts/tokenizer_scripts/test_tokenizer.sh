@@ -18,14 +18,14 @@ TOKENIZER="sapienzanlp/Minerva-7B-base-v1.0"
 # DATASET="/leonardo/home/userexternal/lcolosi0/test-tokenizer-data/train"
 # DATASET="/leonardo_scratch/fast/IscrB_medit/training/minerva-7B-900B_it-900B_en-200B-code-21052024/data/processed/it/culturax-filtered/train"
 # DATASET="/leonardo_scratch/fast/IscrB_medit/training/minerva-7B-900B_it-900B_en-200B-code-21052024/data/processed/it/culturax-filtered/train/"
-DATASET="/leonardo_scratch/fast/mnrv_bblscp/minerva_pretraining/data/processed/it/culturax/train/"
+DATASET="/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/processed/en/arxiv/train"
 # DATASET=/leonardo/home/userexternal/lcolosi0/test-tokenizer-data/train/
 
-echo "Running read_mds.py"
+echo "Running read_mds.py on $DATASET with tokenizer $TOKENIZER"
 python  $BASE_DIR/tests/tokenizers/experiments/read_mds.py \
     --tokenizer $TOKENIZER \
     --branch main \
-    --max_pairs 10 \
+    --max_pairs 1 \
     --dataset $DATASET
 
 

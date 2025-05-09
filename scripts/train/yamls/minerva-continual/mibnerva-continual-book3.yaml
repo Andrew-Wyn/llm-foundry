@@ -1,0 +1,223 @@
+variables:
+  data_local: /leonardo_scratch/fast/IscrB_medit/data_continual/mds/cpt
+  data_remote: # If blank, files must be present in data_local
+  max_seq_len: 4096
+  global_seed: 17
+  run_name: minerva-7B-continual-book3 # If left blank, will be read from env var $RUN_NAME
+
+
+max_seq_len: ${variables.max_seq_len}
+# Run Name
+run_name: ${variables.run_name}
+
+# Model
+model:
+  #use_auth_token: ${oc.env:HF_TOKEN} # ${oc.env:HF_TOKEN}
+  name: hf_causal_lm
+  pretrained_model_name_or_path: /leonardo_scratch/large/userexternal/lmoroni0/models/Minerva-7B-base-v1.0-1110
+  # use_flash_attention_2: True
+  # attn_implementation: flash_attention_2 # eager, flash_attention_2 and sdpa
+  pretrained: true
+  init_device: mixed
+  use_flash_attention_2: true
+
+# Tokenizer
+tokenizer:
+  name: /leonardo_scratch/large/userexternal/lmoroni0/models/Minerva-7B-base-v1.0-1110
+  kwargs:
+    model_max_length: ${variables.max_seq_len}
+
+# Dataloaders
+train_loader:
+  name: text
+  drop_last: true
+  num_workers: 16
+  dataset:
+    predownload: 512 #16384 # 8 * batch size
+    shuffle: True
+    num_canonical_nodes: 8
+    shuffle_block_size: 262144
+    # local: ${variables.data_local}
+    # split: en
+    # shuffle_algo: py1b
+    shuffle_seed: ${variables.global_seed}
+    max_seq_len: ${variables.max_seq_len}
+    streams:
+    streams:
+      # it
+      it_redpajama_2023_14:
+        local: ${data_local}/it/redpajamav2_2023_14
+        split: train
+        repeat: 2
+      it_redpajama_2023_06:
+        local: ${data_local}/it/redpajamav2_2023_06
+        split: train
+        repeat: 2
+      it_redpajama_2022_49:
+        local: ${data_local}/it/redpajamav2_2022_49
+        split: train
+        repeat: 2
+      it_wikipedia:
+        local: ${data_local}/it/wikipedia
+        split: train
+        repeat: 5.0
+      it_benchmarks:
+        local: ${data_local}/it/benchmarks
+        split: train
+        repeat: 7.0
+      it_wikisource:
+        local: ${data_local}/it/wikisource
+        split: train
+        repeat: 5.0
+      it_gutenberg:
+        local: ${data_local}/it/gutenberg
+        split: train
+        repeat: 5.0
+      it_gazzetta:
+        local: ${data_local}/it/gazzetta
+        split: train
+        repeat: 0.5
+      
+      # en
+      en_fineweb:
+        local: ${data_local}/en/fineweb
+        split: train
+        repeat: 1.0
+      en_wikipedia:
+        local: ${data_local}/en/wikipedia
+        split: train
+        repeat: 1.0
+      en_benchmarks:
+        local: ${data_local}/en/benchmarks
+        split: train
+        repeat: 5.0
+      en_books3:
+        local: ${data_local}/en/books3
+        split: train
+        repeat: 1.0
+      en_flan:
+        local: ${data_local}/en/flan
+        split: train
+        repeat: 0.9
+      en_dolmino_math:
+        local: ${data_local}/en/dolmino_math
+        split: train
+        repeat: 1.0
+      en_dolmino_stackexchange:
+        local: ${data_local}/en/dolmino_stackexchange
+        split: train
+        repeat: 1.0
+
+      # code
+      code_stack:
+        local: ${data_local}/code/stack
+        split: train
+        repeat: 1.0
+
+# Optimization
+scheduler:
+  name: cosine_with_warmup
+  t_warmup: 100ba #  llama2 uses 2000 steps
+  alpha_f: 0.1
+
+optimizer:
+  name: decoupled_adamw
+  lr: 3.0e-5
+  betas:
+    - 0.9
+    - 0.95
+  eps: 1.0e-08
+  weight_decay: 0.1
+  # dim: 4096
+  # n_heads: 32
+  # n_kv_heads: 8
+
+algorithms:
+  gradient_clipping:
+    clipping_type: norm
+    clipping_threshold: 1.0
+
+# max_duration = num_tokens / (max_seq_len * global_train_batch_size)
+# ~2T tokens = max_seq_len * global_train_batch_size * max_duration
+# ~2T is 2481170561843
+# max duration is then 2481170561843 / (4096 * 1024) = 591_558
+max_duration: 26953ba #  global_train_batch_size: 4096
+# eval_interval: 1000ba
+eval_interval: 0
+eval_first: false
+eval_subset_num_batches: -1
+global_train_batch_size: 1024
+
+# System
+seed: ${variables.global_seed}
+device_eval_batch_size: 16
+# device_train_microbatch_size: 8
+device_train_microbatch_size: 4
+# device_train_microbatch_size: auto
+precision: amp_bf16
+# precision: fp32 # for debugging in cpu
+
+# FSDP
+fsdp_config:
+  # sharding_strategy: FULL_SHARD
+  sharding_strategy: HYBRID_SHARD
+  mixed_precision: PURE
+  activation_checkpointing: true
+  # activation_checkpointing: false
+  activation_checkpointing_reentrant: false
+  activation_cpu_offload: false
+  limit_all_gathers: true
+
+# DeepSpeed
+# deepspeed_config:
+#   train_batch_size: 2048
+#   train_micro_batch_size_per_gpu: 8
+#   gradient_accumulation_steps: 8       # 2048/8/32 = 8 micro_batch_per_gpu * gradient_acc_step * world_size
+#   bfloat16:
+#     enabled: True
+#   zero_optimization:
+#     stage: 3
+
+# Logging
+progress_bar: true
+log_to_console: true
+console_log_interval: 1ba
+
+### WARN: too much safetensors saved, using manual conversion
+callbacks:
+  # optimizer_monitor:
+  #   log_optimizer_metrics: true
+  speed_monitor:
+    window_size: 10
+  lr_monitor: {}
+  memory_monitor: {}
+  runtime_estimator: {}
+#   hf_checkpointer:
+#     overwrite: true
+#     precision: bfloat16
+#     save_folder: /leonardo_scratch/large/userexternal/lmoroni0/llm-foundry/runs/{run_name}/checkpoints
+#     save_interval: 5ba
+
+loggers:
+  wandb:
+    entity: "terraformer-144"
+    project: "minerva-7B-continual"
+    init_kwargs:
+      mode: "offline"
+      # id: ${run_name}
+      dir: "/leonardo_scratch/fast/IscrB_medit/minerva_continual/llm-foundry/training_logs/minerva-7B-continual-29042025/"
+
+# Checkpoint to local filesystem or remote object store
+save_interval: 500ba
+save_num_checkpoints_to_keep: -1 # Important, this cleans up checkpoints saved to DISK
+save_folder: /leonardo_scratch/fast/IscrB_medit/minerva_continual/llm-foundry/runs/{run_name}
+# save_folder: s3://my-bucket/my-folder/{run_name}/checkpoints
+
+# Load from local filesystem or remote object store
+# load_path: /leonardo_scratch/fast/IscrB_medit/minerva_continual/llm-foundry/runs/{run_name}/ep0-ba8000-rank0.pt
+load_path: /leonardo_scratch/fast/IscrB_medit/minerva_continual/llm-foundry/runs/{run_name}/latest-rank0.pt
+# load_path:  /leonardo_scratch/fast/IscrB_medit/minerva_continual/llm-foundry/runs/{run_name}/ep0-ba10000-rank0.pt
+# load_path: s3://my-bucket/my-folder/gpt-125m/checkpoints/latest-rank{rank}.pt
+autoresume: True
+
+# dist_timeout: 1200

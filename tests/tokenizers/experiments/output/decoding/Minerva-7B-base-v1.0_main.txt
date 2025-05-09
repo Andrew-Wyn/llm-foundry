@@ -1,0 +1,269 @@
+--- Sample 1 ---
+[Tokens]:
+['<s>', 'Ġ\\', 'section', '{', 'Intro', 'duction', '}', 'Ċ', 'Ċ', 'Supp', 'ose', 'Ġ$', 'E', '$', 'Ġis', 'Ġa', 'Ġcomm', 'ut', 'ative', 'Ġ$', 'S', '$', '-', 'al', 'gebra', ',', 'Ġin', 'Ġthe', 'Ġsense', 'Ġof', 'Ġ\\', 'cite', '{', 'E', 'K', 'MM', '},', 'Ġ', 'Ċ', 'and', 'Ġ$', 'A', '$', 'Ġis', 'Ġa', 'Ġcomm', 'ut', 'ative', 'Ġ$', 'E', '$', '-', 'al', 'gebra', '.', 'Ġ', 'ĠWe', 'Ġwant', 'Ġto', 'Ġcapture', 'Ġthe', 'Ġproperties', 'Ġ', 'Ċ', 'and', 'Ġunderlying', 'Ġstructure', 'Ġof', 'Ġthe', 'Ġhom', 'oto', 'py', 'Ġgroups', 'Ġ$', '\\', 'pi', '_', '*', 'ĠA', 'Ġ=', 'ĠA', '_', '*', '$', 'Ġof', 'Ġ$', 'A', '$', ',', 'Ġ', 'Ċ', 'by', 'Ġstudying', 'Ġoperations', 'Ġassociated', 'Ġto', 'Ġthe', 'Ġco', 'h', 'om', 'ology', 'Ġtheory', 'Ġthat', 'Ġ$', 'E', '$', 'Ġ', 'Ċ', 'rep', 'resents', '.', 'ĠĠĊ', 'Ċ', 'An', 'Ġimportant', 'Ġfamily', 'Ġof', 'Ġco', 'h', 'om', 'ology', 'Ġoperations', ',', 'Ġcalled', 'Ġ{', '\\', 'em', 'Ġpower', 'Ġ', 'Ċ', 'oper', 'ations', '},', 'Ġis', 'Ġconstructed', 'Ġvia', 'Ġthe', 'Ġextended', 'Ġpowers', '.', 'Ġ', 'ĠSpecifically', ',', 'Ġ', 'Ċ', 'cons', 'ider', 'Ġthe', 'Ġ{', '\\', 'em', 'Ġ$', 'm', '$', "'", 'th', 'Ġextended', 'Ġpower', '}', 'Ġfun', 'ctor', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġ{', '\\', 'mb', 'ĠP', '}', '_', 'E', '^', 'm', 'Ġ(-', ')', 'Ġ\\', 'col', 'one', 'qq', 'Ġ(-', ')', '^', '{\\', 'w', 'edge', '_', 'E', 'Ġm', '}', 'Ġ/', 'Ġ\\', 'S', 'igma', '_', 'm', 'Ġ\\', 'col', 'on', '\\', 'th', 'in', 'space', 'Ġ{', '\\', 'rm', 'ĠMod', '}', '_', 'E', 'Ġ\\', 'to', 'Ġ{', '\\', 'rm', 'ĠMod', '}', '_', 'E', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'on', 'Ġthe', 'Ġcategory', 'Ġof', 'Ġ$', 'E', '$', '-', 'modules', ',', 'Ġwhich', 'Ġsends', 'Ġan', 'Ġ$', 'E', '$', '-', 'module', 'Ġto', 'Ġits', 'Ġ', 'Ċ', '$', 'm', '$', '-', 'fold', 'Ġsm', 'ash', 'Ġproduct', 'Ġover', 'Ġ$', 'E', '$', 'Ġmodulo', 'Ġthe', 'Ġaction', 'Ġby', 'Ġthe', 'Ġsym', 'metric', 'Ġgroup', 'Ġ', 'Ċ', 'on', 'Ġ$', 'm', '$', 'Ġletters', '.', 'Ġ', 'ĠThe', 'Ġ${', '\\', 'mb', 'ĠP', '}', '_', 'E', '^', 'm', 'Ġ(-', ')$', "'", 's', 'Ġassemble', 'Ġtogether', 'Ġto', 'Ġgive', 'Ġthe', 'Ġ{', '\\', 'em', 'Ġ', 'Ċ', 'free', 'Ġcomm', 'ut', 'ative', 'Ġ$', 'E', '$', '-', 'al', 'gebra', '}', 'Ġfun', 'ctor', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġ{', '\\', 'mb', 'ĠP', '}', '_', 'E', 'Ġ(-', ')', 'Ġ\\', 'col', 'one', 'qq', 'Ġ\\', 'big', 've', 'e', '_{', 'm', 'Ġ\\', 'ge', 'q', 'Ġ0', '}', 'Ġ{', '\\', 'mb', 'ĠP', '}', '_', 'E', '^', 'm', 'Ġ(-', ')', 'Ġ\\', 'col', 'on', '\\', 'th', 'in', 'space', 'Ġ{', '\\', 'rm', 'ĠMod', '}', '_', 'E', 'Ġ\\', 'to', 'Ġ{', '\\', 'rm', 'ĠAl', 'g', '}', '_', 'E', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'from', 'Ġthe', 'Ġcategory', 'Ġof', 'Ġ$', 'E', '$', '-', 'modules', 'Ġto', 'Ġthe', 'Ġcategory', 'Ġof', 'Ġcomm', 'ut', 'ative', 'Ġ', 'Ċ', '$', 'E', '$', '-', 'al', 'ge', 'br', 'as', '.', 'Ġ', 'ĠThese', 'Ġfun', 'ct', 'ors', 'Ġdesc', 'end', 'Ġto', 'Ġhom', 'oto', 'py', 'Ġcategories', '.', 'Ġ', 'ĠIn', 'Ġ', 'Ċ', 'partic', 'ular', ',', 'Ġeach', 'Ġ$', '\\', 'alpha', 'Ġ\\', 'in', 'Ġ\\', 'pi', '_{', 'd', '+', 'i', '}', '~', '{\\', 'mb', 'ĠP', '}', '_', 'E', '^', 'm', 'Ġ(', '\\', 'S', 'igma', '^', 'd', 'ĠE', ')$', 'Ġgives', 'Ġrise', 'Ġto', 'Ġa', 'Ġ', 'Ċ', 'power', 'Ġoperation', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'ĠQ', '_', '\\', 'alpha', 'Ġ\\', 'col', 'on', '\\', 'th', 'in', 'space', 'ĠA', '_', 'd', 'Ġ\\', 'to', 'ĠA', '_{', 'd', '+', 'i', '}', 'Ġ', 'Ċ', '\\', ']', 'Ċ', '(', 'cf', '.', '~', '\\', 'cite', '[', 'S', 'ections', 'ĠI', '.', '2', 'Ġand', 'ĠIX', '.', '1', ']', '{', 'H', '_', 'in', 'fty', '}', 'Ġand', 'Ġ\\', 'cite', '[', 'Section', 'Ġ3', ']', '{', 'c', 'ong', '}).', 'ĠĠĊ', 'Ċ', 'Under', 'Ġthe', 'Ġaction', 'Ġof', 'Ġpower', 'Ġoperations', ',', 'Ġ$', 'A', '_', '*', '$', 'Ġis', 'Ġan', 'Ġal', 'gebra', 'Ġover', 'Ġsome', 'Ġ', 'Ċ', 'oper', 'ad', 'Ġin', 'Ġ$', 'E', '_', '*', '$', '-', 'modules', 'Ġinvolving', 'Ġthe', 'Ġstructure', 'Ġof', 'Ġ$', 'E', '_', '*', 'ĠB', '\\', 'S', 'igma', '_', 'm', '$', 'Ġfor', 'Ġ', 'Ċ', 'all', 'Ġ$', 'm', '$.', 'Ġ', 'ĠThis', 'Ġoper', 'ad', 'Ġis', 'Ġtraditionally', 'Ġcalled', 'Ġa', 'Ġ{', '\\', 'em', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġal', 'gebra', '},', 'Ġor', 'Ġ', 'Ċ', 'more', 'Ġprecisely', ',', 'Ġa', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġ{', '\\', 'em', 'Ġtheory', '}', 'Ġas', 'Ġthe', 'Ġ{', '\\', 'em', 'Ġal', 'gebra', 'ic', 'Ġtheory', '}', 'Ġof', 'Ġ', 'Ċ', 'power', 'Ġoperations', 'Ġacting', 'Ġon', 'Ġthe', 'Ġhom', 'oto', 'py', 'Ġgroups', 'Ġof', 'Ġcomm', 'ut', 'ative', 'Ġ', 'Ċ', '$', 'E', '$', '-', 'al', 'ge', 'br', 'as', 'Ġ(', 'cf', '.', '~', '\\', 'cite', '[', 'Ch', 'ap', 'ters', 'ĠIII', ',', 'ĠVIII', ',', 'Ġand', 'ĠIX', ']', '{', 'H', '_', 'in', 'fty', '}', 'Ġand', 'Ġ', 'Ċ', '\\', 'cite', '[', 'Section', 'Ġ9', ']', '{', 'lp', 'o', '}).', 'ĠĠĊ', 'Ċ', 'A', 'Ġspecific', 'Ġcase', 'Ġis', 'Ġwhen', 'Ġ$', 'E', '$', 'Ġrepresents', 'Ġa', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġof', 'Ġheight', 'Ġ$', 'n', '$', 'Ġ', 'Ċ', 'and', 'Ġ$', 'A', '$', 'Ġis', 'Ġ$', 'K', '(', 'n', ')$', '-', 'local', '.', 'Ġ', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġspect', 'ra', 'Ġplay', 'Ġa', 'Ġcrucial', 'Ġrole', 'Ġ', 'Ċ', 'in', 'Ġmodern', 'Ġstable', 'Ġhom', 'oto', 'py', 'Ġtheory', ',', 'Ġparticularly', 'Ġin', 'Ġthe', 'Ġwork', 'Ġof', 'ĠAnd', 'o', ',', 'Ġ', 'Ċ', 'H', 'op', 'kins', ',', 'Ġand', 'ĠStr', 'ick', 'land', 'Ġon', 'Ġthe', 'Ġtop', 'ological', 'Ġapproach', 'Ġto', 'Ġel', 'li', 'ptic', 'Ġgenera', 'Ġ', 'Ċ', '(', 'see', 'Ġ\\', 'cite', '{', 'c', 'ube', '}).', 'Ġ', 'ĠAs', 'Ġrecalled', 'Ġin', 'Ġ\\', 'cite', '[', '1', '.', '5', ']', '{', 'c', 'ong', '},', 'Ġthe', 'Ġ$', 'K', '(', 'n', ')$', '-', 'local', 'Ġ', 'Ċ', '$', 'E', '$', '-', 'D', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġtheory', 'Ġis', 'Ġlargely', 'Ġunderstood', 'Ġbased', 'Ġon', 'Ġwork', 'Ġof', 'Ġthose', 'Ġauthors', '.', 'Ġ', 'ĠIn', 'Ġ', 'Ċ', '\\', 'cite', '{', 'c', 'ong', '},', 'ĠRe', 'z', 'k', 'Ġmaps', 'Ġout', 'Ġthe', 'Ġfoundations', 'Ġof', 'Ġthis', 'Ġtheory', '.', 'Ġ', 'ĠHe', 'Ġgives', 'Ġa', 'Ġ', 'Ċ', 'c', 'ong', 'ru', 'ence', 'Ġcrit', 'er', 'ion', 'Ġfor', 'Ġan', 'Ġal', 'gebra', 'Ġover', 'Ġthe', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġtheory', 'Ġ', 'Ċ', '(\\', 'cite', '[', 'The', 'ore', 'm', 'ĠA', ']', '{', 'c', 'ong', '}).', 'Ġ', 'ĠThis', 'Ġenables', 'Ġone', 'Ġto', 'Ġstudy', 'Ġthe', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġ', 'Ċ', '{\\', 'em', 'Ġtheory', '},', 'Ġwhich', 'Ġmodels', 'Ġall', 'Ġthe', 'Ġal', 'gebra', 'ic', 'Ġstructure', 'Ġnaturally', 'Ġ', 'Ċ', 'ad', 'her', 'ing', 'Ġto', 'Ġ$', 'A', '_', '*', '$', ',', 'Ġby', 'Ġworking', 'Ġwith', 'Ġa', 'Ġcertain', 'Ġassoci', 'ative', 'Ġring', 'Ġ$', '\\', 'G', 'amma', '$', 'Ġas', 'Ġ', 'Ċ', 'the', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġ{', '\\', 'em', 'Ġal', 'gebra', '}.', 'Ġ', 'ĠMoreover', ',', 'ĠRe', 'z', 'k', 'Ġprovides', 'Ġa', 'Ġgeometric', 'Ġdescription', 'Ġ', 'Ċ', 'of', 'Ġthis', 'Ġcongr', 'u', 'ence', 'Ġcrit', 'er', 'ion', ',', 'Ġin', 'Ġterms', 'Ġof', 'Ġshe', 'aves', 'Ġon', 'Ġthe', 'Ġmoduli', 'Ġproblem', 'Ġ', 'Ċ', 'of', 'Ġdeform', 'ations', 'Ġof', 'Ġformal', 'Ġgroups', 'Ġand', 'ĠF', 'rob', 'enius', 'Ġis', 'ogen', 'ies', 'Ġ(', 'see', 'Ġ', 'Ċ', '\\', 'cite', '[', 'The', 'ore', 'm', 'ĠB', ']', '{', 'c', 'ong', '}).', 'Ġ', 'ĠThis', 'Ġconnects', 'Ġthe', 'Ġstructure', 'Ġof', 'Ġ$', '\\', 'G', 'amma', '$', 'Ġto', 'Ġthe', 'Ġ', 'Ċ', 'ge', 'ometry', 'Ġunderlying', 'Ġ$', 'E', '$', ',', 'Ġmoving', 'Ġone', 'Ġstep', 'Ġforward', 'Ġfrom', 'Ġa', 'Ġwork', 'able', 'Ġobject', 'Ġ', 'Ċ', '$', '\\', 'G', 'amma', '$', 'Ġto', 'Ġthings', 'Ġthat', 'Ġare', 'Ġcomp', 'utable', '.', 'Ġ', 'ĠIn', 'Ġa', 'Ġcompanion', 'Ġpaper', 'Ġ\\', 'cite', '{', 'h', '2', 'p', '2', '},', 'Ġ', 'Ċ', 'Re', 'z', 'k', 'Ġgives', 'Ġexplicit', 'Ġcalculations', 'Ġof', 'Ġthe', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġtheory', 'Ġfor', 'Ġa', 'Ġspecific', 'ĠMor', 'ava', 'Ġ', 'Ċ', '$', 'E', '$', '-', 'the', 'ory', 'Ġof', 'Ġheight', 'Ġ$', 'n', 'Ġ=', 'Ġ2', '$', 'Ġat', 'Ġthe', 'Ġprime', 'Ġ2', '.', 'ĠĠĊ', 'Ċ', 'The', 'Ġpurpose', 'Ġof', 'Ġthis', 'Ġpaper', 'Ġis', 'Ġto', 'Ġmake', 'Ġavailable', 'Ġcalculations', 'Ġanalog', 'ous', 'Ġto', 'Ġ', 'Ċ', 'some', 'Ġof', 'Ġthe', 'Ġresults', 'Ġin', 'Ġ\\', 'cite', '{', 'h', '2', 'p', '2', '},', 'Ġat', 'Ġthe', 'Ġprime', 'Ġ3', ',', 'Ġtogether', 'Ġwith', 'Ġ', 'Ċ', 'calcul', 'ations', 'Ġof', 'Ġthe', 'Ġcorresponding', 'Ġpower', 'Ġoperations', 'Ġon', 'Ġthe', 'Ġ', 'Ċ', '$', 'K', '(', '1', ')$', '-', 'local', 'ization', 'Ġof', 'Ġthe', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġspectrum', '.', 'ĠĠĊ', 'Ċ', 'Ċ', '\\', 'subs', 'ection', '{', 'Out', 'line', 'Ġof', 'Ġthe', 'Ġpaper', '}', 'Ċ', 'Ċ', 'As', 'Ġin', 'Ġ\\', 'cite', '{', 'h', '2', 'p', '2', '},', 'Ġthe', 'Ġcomp', 'utation', 'Ġof', 'Ġpower', 'Ġoperations', 'Ġin', 'Ġthis', 'Ġpaper', 'Ġ', 'Ċ', 'follow', 's', 'Ġthe', 'Ġapproach', 'Ġof', 'Ġ\\', 'cite', '{', 'ste', 'en', 'rod', '}', ':', 'Ġone', 'Ġfirst', 'Ġdefines', 'Ġa', 'Ġtotal', 'Ġpower', 'Ġ', 'Ċ', 'operation', ',', 'Ġand', 'Ġthen', 'Ġuses', 'Ġthe', 'Ġcomp', 'utation', 'Ġof', 'Ġthe', 'Ġco', 'h', 'om', 'ology', 'Ġof', 'Ġthe', 'Ġ', 'Ċ', 'class', 'ifying', 'Ġspace', 'Ġ$', 'B', '\\', 'S', 'igma', '_', 'm', '$', 'Ġfor', 'Ġthe', 'Ġsym', 'metric', 'Ġgroup', 'Ġto', 'Ġobtain', 'Ġ', 'Ċ', 'individ', 'ual', 'Ġpower', 'Ġoperations', '.', 'Ġ', 'ĠThese', 'Ġtwo', 'Ġsteps', 'Ġare', 'Ġcarried', 'Ġout', 'Ġin', 'Ġ', 'Ċ', 'S', 'ections', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '}', 'Ġand', 'Ġ\\', 'ref', '{', 'sec', ':', 'individ', 'ual', '}', 'Ġrespectively', '.', 'ĠĠĊ', 'Ċ', 'In', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '},', 'Ġby', 'Ġdoing', 'Ġcalculations', 'Ġwith', 'Ġel', 'li', 'ptic', 'Ġcurves', 'Ġ', 'Ċ', 'associ', 'ated', 'Ġto', 'Ġour', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġ$', 'E', '$', ',', 'Ġwe', 'Ġgive', 'Ġformulas', 'Ġfor', 'Ġthe', 'Ġtotal', 'Ġ', 'Ċ', 'power', 'Ġoperation', 'Ġ$', '\\', 'p', 'si', '^', '3', '$', 'Ġon', 'Ġ$', 'E', '_', '0', '$', 'Ġand', 'Ġthe', 'Ġring', 'Ġ$', 'S', '_', '3', '$', 'Ġwhich', 'Ġrepresents', 'Ġthe', 'Ġ', 'Ċ', 'cor', 'respond', 'ing', 'Ġmoduli', 'Ġproblem', '.', 'ĠĠĊ', 'Ċ', 'In', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'individ', 'ual', '},', 'Ġbased', 'Ġon', 'Ġcalculations', 'Ġof', 'Ġ', 'Ċ', '$', 'E', '^', '*', 'ĠB', '\\', 'S', 'igma', '_', 'm', '$', 'Ġin', 'Ġ\\', 'cite', '{', 'Str', '9', '8', '}', 'Ġas', 'Ġreflected', 'Ġin', 'Ġthe', 'Ġformula', 'Ġfor', 'Ġ$', 'S', '_', '3', '$', ',', 'Ġ', 'Ċ', 'we', 'Ġdefine', 'Ġindividual', 'Ġpower', 'Ġoperations', ',', 'Ġand', 'Ġderive', 'Ġthe', 'Ġrelations', 'Ġthey', 'Ġ', 'Ċ', 's', 'atisf', 'y', '.', 'Ġ', 'ĠIn', 'Ġview', 'Ġof', 'Ġthe', 'Ġgeneral', 'Ġstructures', 'Ġstudied', 'Ġin', 'Ġ\\', 'cite', '{', 'c', 'ong', '},', 'Ġwe', 'Ġ', 'Ċ', 'then', 'Ġget', 'Ġan', 'Ġexplicit', 'Ġdescription', 'Ġof', 'Ġthe', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġal', 'gebra', 'Ġ$', '\\', 'G', 'amma', '$', 'Ġfor', 'Ġ', 'Ċ', '$', 'K', '(', '2', ')$', '-', 'local', 'Ġcomm', 'ut', 'ative', 'Ġ$', 'E', '$', '-', 'al', 'ge', 'br', 'as', '.', 'ĠĠĊ', 'Ċ', 'In', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'K', '(', '1', ')', '},', 'Ġwe', 'Ġdescribe', 'Ġthe', 'Ġrelationship', 'Ġbetween', 'Ġthe', 'Ġ', 'Ċ', 'total', 'Ġpower', 'Ġoperation', 'Ġ$', '\\', 'p', 'si', '^', '3', '$', ',', 'Ġat', 'Ġheight', 'Ġ2', ',', 'Ġand', 'Ġthe', 'Ġcorresponding', 'Ġ', 'Ċ', '$', 'K', '(', '1', ')$', '-', 'local', 'Ġpower', 'Ġoperations', '.', 'Ġ', 'ĠWe', 'Ġthen', 'Ġderive', 'Ġformulas', 'Ġfor', 'Ġthe', 'Ġlatter', 'Ġ', 'Ċ', 'from', 'Ġthe', 'Ġcalculations', 'Ġin', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '}.', 'ĠĠĊ', 'Ċ', '\\', 'begin', '{', 'rm', 'k', '}', 'Ċ', '\\', 'label', '{', 'rm', 'k', ':', 'gra', 'ding', '}', 'Ċ', 'ĠIn', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '},', 'Ġwe', 'Ġdo', 'Ġcalculations', 'Ġwith', 'Ġa', 'Ġuniversal', 'ĠĊ', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġover', 'Ġ{', '\\', 'em', 'Ġall', '}', 'Ġof', 'Ġthe', 'Ġmoduli', 'Ġstack', 'Ġwhich', 'Ġis', 'Ġan', 'Ġaff', 'ine', 'ĠĊ', 'Ġopen', 'Ġsubs', 'che', 'me', 'Ġof', 'Ġa', 'Ġweight', 'ed', 'Ġproject', 'ive', 'Ġspace', 'Ġ(', 'cf', '.', '~', 'Pro', 'position', 'ĠĊ', 'Ġ\\', 'ref', '{', 'prop', ':', 'C', '}).', 'Ġ', 'ĠAt', 'Ġthe', 'Ġprime', 'Ġ3', ',', 'Ġthe', 'Ġsupers', 'ing', 'ular', 'Ġloc', 'us', 'Ġconsists', 'Ġof', 'Ġa', 'ĠĊ', 'Ġsingle', 'Ġclosed', 'Ġpoint', ',', 'Ġand', 'Ġthe', 'Ġcorresponding', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġarises', 'ĠĊ', 'Ġ{', '\\', 'em', 'Ġlocally', '}', 'Ġin', 'Ġan', 'Ġaff', 'ine', 'Ġcoordinate', 'Ġchart', 'Ġof', 'Ġthis', 'Ġweight', 'ed', 'Ġproject', 'ive', 'ĠĊ', 'Ġspace', 'Ġcontaining', 'Ġthe', 'Ġsupers', 'ing', 'ular', 'Ġloc', 'us', '.', 'Ġ', 'ĠIn', 'Ġthis', 'Ġpaper', 'Ġwe', 'Ġchoose', 'Ġa', 'ĠĊ', 'Ġparticular', 'Ġaff', 'ine', 'Ġcoordinate', 'Ġchart', 'Ġfor', 'Ġcomputing', 'Ġthe', 'Ġhom', 'oto', 'py', 'Ġgroups', 'Ġof', 'ĠĊ', 'Ġthe', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġspectrum', 'Ġand', 'Ġthe', 'Ġpower', 'Ġoperations', ';', 'Ġwe', 'Ġhope', 'Ġthat', 'Ġthe', 'ĠĊ', 'Ġgeneral', 'ity', 'Ġof', 'Ġthe', 'Ġcalculations', 'Ġin', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '}', 'Ġmakes', 'Ġit', 'ĠĊ', 'Ġeasier', 'Ġto', 'Ġwork', 'Ġwith', 'Ġother', 'Ġcoordinate', 'Ġcharts', 'Ġas', 'Ġwell', '.', 'ĠĠ', 'Ċ', '\\', 'end', '{', 'rm', 'k', '}', 'Ċ', 'Ċ', '\\', 'begin', '{', 'rm', 'k', '}', 'Ċ', '\\', 'label', '{', 'rm', 'k', ':', 'parameter', '}', 'Ċ', 'ĠThe', 'Ġring', 'Ġ$', 'S', '_', '3', '$', 'Ġturns', 'Ġout', 'Ġto', 'Ġbe', 'Ġan', 'Ġal', 'gebra', 'Ġwith', 'Ġone', 'Ġgenerator', 'Ġover', 'Ġthe', 'ĠĊ', 'Ġbase', 'Ġring', 'Ġwhere', 'Ġour', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġis', 'Ġdefined', 'Ġ(', 'cf', '.', '~', '\\', 'isog', '{', 'i', '}', 'Ġand', 'ĠĊ', 'Ġ\\', 'eq', 'ref', '{', 'S', '_', '3', '}).', 'Ġ', 'ĠThis', 'Ġgenerator', 'Ġappears', 'Ġas', 'Ġa', 'Ġparameter', 'Ġin', 'Ġthe', 'Ġformulas', 'ĠĊ', 'Ġfor', 'Ġthe', 'Ġtotal', 'Ġpower', 'Ġoperation', 'Ġ$', '\\', 'p', 'si', '^', '3', '$', ',', 'Ġand', 'Ġis', 'Ġresponsible', 'Ġfor', 'Ġhow', 'Ġthe', 'ĠĊ', 'Ġindividual', 'Ġpower', 'Ġoperations', 'Ġare', 'Ġdefined', 'Ġand', 'Ġhow', 'Ġtheir', 'Ġformulas', 'Ġlook', '.', 'ĠĠĊ', 'ĠDifferent', 'Ġchoices', 'Ġof', 'Ġthis', 'Ġparameter', 'Ġresult', 'Ġin', 'Ġdifferent', 'Ġbases', 'Ġof', 'Ġthe', 'ĠĊ', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġal', 'gebra', 'Ġ$', '\\', 'G', 'amma', '$.', 'Ġ', 'ĠThe', 'Ġparameter', 'Ġin', 'Ġthis', 'Ġpaper', 'Ġcomes', 'Ġfrom', 'Ġthe', 'Ġrelative', 'ĠĊ', 'Ġcot', 'ang', 'ent', 'Ġspace', 'Ġof', 'Ġthe', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġat', 'Ġthe', 'Ġidentity', 'Ġ(', 'see', 'Ġ\\', 'isog', '{', 'iv', '},', 'ĠĊ', 'ĠCor', 'oll', 'ary', 'Ġ\\', 'ref', '{', 'cor', ':', 'K', "'},", 'Ġand', 'ĠRem', 'ark', 'Ġ\\', 'ref', '{', 'rm', 'k', ':', 'K', "'}", ').', 'Ġ', 'ĠThis', 'Ġchoice', 'Ġis', 'ĠĊ', 'Ġconvenient', 'Ġfor', 'Ġder', 'iving', 'ĠAd', 'em', 'Ġrelations', 'Ġin', 'Ġ\\', 'q', '{', 'iv', '},', 'Ġand', 'Ġit', 'Ġfits', 'Ġinto', 'Ġthe', 'ĠĊ', 'Ġtreatment', 'Ġof', 'Ġgrad', 'ings', 'Ġin', 'Ġ\\', 'cite', '[', 'Section', 'Ġ2', ']', '{', 'c', 'ong', '}', 'Ġ(', 'see', 'Ġ\\', 'go', '{', 'ii', '}', 'Ġand', 'ĠĊ', 'ĠThe', 'ore', 'm', 'Ġ\\', 'ref', '{', 'th', 'm', ':', 'gamma', '}).', 'Ġ', 'ĠWe', 'Ġshould', 'Ġpoint', 'Ġout', 'Ġthat', 'Ġour', 'Ġchoice', 'Ġis', 'Ġby', 'Ġno', 'ĠĊ', 'Ġmeans', 'Ġcanon', 'ical', '.', 'Ġ', 'ĠWe', 'Ġdo', 'Ġnot', 'Ġknow', 'Ġyet', ',', 'Ġas', 'Ġpart', 'Ġof', 'Ġthe', 'Ġstructure', 'Ġof', 'Ġthe', 'ĠĊ', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġal', 'gebra', ',', 'Ġif', 'Ġthere', 'Ġis', 'Ġa', 'Ġcanon', 'ical', 'Ġbasis', 'Ġwhich', 'Ġis', 'Ġboth', 'Ġgeometric', 'ally', 'ĠĊ', 'Ġinteresting', 'Ġand', 'Ġcomput', 'ationally', 'Ġconvenient', '.', 'Ġ', 'ĠSome', 'what', 'Ġsurprisingly', ',', 'ĠĊ', 'Ġalthough', 'Ġit', 'Ġappears', 'Ġto', 'Ġcome', 'Ġfrom', 'Ġdifferent', 'Ġconsiderations', ',', 'Ġour', 'Ġchoice', 'ĠĊ', 'Ġhas', 'Ġan', 'Ġanalog', 'Ġat', 'Ġthe', 'Ġprime', 'Ġ2', 'Ġwhich', 'Ġcoinc', 'ides', 'Ġwith', 'Ġthe', 'Ġparameter', 'Ġused', 'Ġin', 'ĠĊ', 'Ġ\\', 'cite', '{', 'h', '2', 'p', '2', '}', 'Ġ(', 'see', 'ĠRem', 'arks', 'Ġ\\', 'ref', '{', 'rm', 'k', ':', 'K', '}', 'Ġand', 'Ġ\\', 'ref', '{', 'rm', 'k', ':', 'KK', "'}", ').', 'Ġ', 'ĠThe', 'ĠĊ', 'Ġcalculations', 'Ġfollow', 'Ġa', 'Ġrecipe', 'Ġin', 'Ġhope', 'Ġof', 'Ġgeneral', 'izing', 'Ġto', 'Ġother', 'ĠMor', 'ava', 'ĠĊ', 'Ġ$', 'E', '$', '-', 'the', 'ories', 'Ġof', 'Ġheight', 'Ġ2', ';', 'Ġwe', 'Ġhope', 'Ġto', 'Ġaddress', 'Ġthese', 'Ġmatters', 'Ġand', 'ĠĊ', 'Ġrecognize', 'Ġmore', 'Ġof', 'Ġthe', 'Ġgeneral', 'Ġpatterns', 'Ġbased', 'Ġon', 'Ġfurther', 'Ġcomput', 'ational', 'ĠĊ', 'Ġevidence', '.', 'ĠĠ', 'Ċ', '\\', 'end', '{', 'rm', 'k', '}', 'Ċ', 'Ċ', 'Ċ', '\\', 'subs', 'ection', '{', 'A', 'cknow', 'led', 'g', 'ements', '}', 'Ċ', 'Ċ', 'I', 'Ġthank', 'ĠCharles', 'ĠRe', 'z', 'k', 'Ġfor', 'Ġhis', 'Ġencouragement', 'Ġon', 'Ġthis', 'Ġwork', ',', 'Ġand', 'Ġfor', 'Ġhis', 'Ġ', 'Ċ', 'obs', 'ervation', 'Ġin', 'Ġa', 'Ġcorrespondence', 'Ġwhich', 'Ġled', 'Ġto', 'ĠPro', 'position', 'Ġ', 'Ċ', '\\', 'ref', '{', 'prop', ':', 'f', 'rob', '^', '2', '}', 'Ġand', 'ĠCor', 'oll', 'ary', 'Ġ\\', 'ref', '{', 'cor', ':', 'K', "'", '}.', 'ĠĠĊ', 'Ċ', 'I', 'Ġthank', 'ĠKyle', 'ĠOr', 'ms', 'by', 'Ġfor', 'Ġhelpful', 'Ġdiscussions', 'Ġon', 'ĠSection', 'Ġ\\', 'ref', '{', 'sec', ':', 'total', '},', 'Ġ', 'Ċ', 'and', 'Ġfor', 'Ġdirecting', 'Ġme', 'Ġto', 'Ġplaces', 'Ġin', 'Ġthe', 'Ġliterature', '.', 'ĠĠĊ', 'Ċ', 'I', 'Ġthank', 'ĠTyler', 'ĠLaw', 'son', 'Ġfor', 'Ġthe', 'Ġsustained', 'Ġsupport', 'Ġfrom', 'Ġhim', 'ĠI', 'Ġreceived', 'Ġas', 'Ġa', 'Ġ', 'Ċ', 'student', '.', 'ĠĠĊ', 'Ċ', 'Ċ', '\\', 'subs', 'ection', '{', 'Con', 'ventions', '}', 'Ċ', 'Ċ', 'Let', 'Ġ$', 'p', '$', 'Ġbe', 'Ġa', 'Ġprime', ',', 'Ġ$', 'q', '$', 'Ġa', 'Ġpower', 'Ġof', 'Ġ$', 'p', '$', ',', 'Ġand', 'Ġ$', 'n', '$', 'Ġa', 'Ġpositive', 'Ġinteger', '.', 'Ġ', 'ĠWe', 'Ġ', 'Ċ', 'use', 'Ġthe', 'Ġsymbols', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġ{', '\\', 'mb', 'ĠF', '}', '_', 'q', '\\', 'text', '{', ',', '}', '~~', '{\\', 'mb', 'ĠZ', '}', '_', 'q', '\\', 'text', '{', ',', '}', '~~', '{\\', 'rm', 'Ġand', '}', '~~', '{\\', 'mb', 'ĠZ', '}/', 'n', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'to', 'Ġden', 'ote', 'Ġa', 'Ġfield', 'Ġwith', 'Ġ$', 'q', '$', 'Ġelements', ',', 'Ġthe', 'Ġring', 'Ġof', 'Ġ$', 'p', '$', '-', 'typ', 'ical', 'ĠW', 'itt', 'Ġ', 'Ċ', 'v', 'ectors', 'Ġover', 'Ġ${', '\\', 'mb', 'ĠF', '}', '_', 'q', '$', ',', 'Ġand', 'Ġthe', 'Ġadd', 'itive', 'Ġgroup', 'Ġof', 'Ġinteg', 'ers', 'Ġmodulo', 'Ġ$', 'n', '$', ',', 'Ġ', 'Ċ', 'resp', 'ect', 'ively', '.', 'ĠĠĊ', 'Ċ', 'If', 'Ġ$', 'R', '$', 'Ġis', 'Ġa', 'Ġring', ',', 'Ġthen', 'Ġ$', 'R', '\\', 'll', 'bra', 'cket', 'Ġx', 'Ġ\\', 'rr', 'bra', 'cket', '$', 'Ġand', 'Ġ$', 'R', 'Ġ(', '\\', '!(', 'x', ')\\', '!)', '$', 'Ġ', 'Ċ', 'den', 'ote', 'Ġthe', 'Ġrings', 'Ġof', 'Ġformal', 'Ġpower', 'Ġseries', 'Ġand', 'Ġformal', 'ĠLaurent', 'Ġseries', 'Ġover', 'Ġ', 'Ċ', '$', 'R', '$', 'Ġin', 'Ġthe', 'Ġvariable', 'Ġ$', 'x', '$', 'Ġrespectively', '.', 'Ġ', 'ĠIf', 'Ġ$', 'I', 'Ġ\\', 'sub', 'set', 'ĠR', '$', 'Ġis', 'Ġan', 'Ġideal', ',', 'Ġ', 'Ċ', 'then', 'Ġ$', 'R', '_', 'I', '^', '\\', 'w', 'edge', '$', 'Ġden', 'otes', 'Ġthe', 'Ġcompletion', 'Ġof', 'Ġ$', 'R', '$', 'Ġwith', 'Ġrespect', 'Ġto', 'Ġ$', 'I', '$.', 'ĠĠĊ', 'Ċ', 'If', 'Ġ$', 'E', '$', 'Ġis', 'Ġan', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġand', 'Ġ$', 'm', '$', 'Ġis', 'Ġan', 'Ġinteger', ',', 'Ġthen', 'Ġ$', '[', 'm', ']', '$', 'Ġden', 'otes', 'Ġ', 'Ċ', 'the', 'Ġmultip', 'lication', '-', 'by', '-', '$', 'm', '$', 'Ġmap', 'Ġon', 'Ġ$', 'E', '$', ',', 'Ġand', 'Ġ$', 'E', '[', 'm', ']', '$', 'Ġden', 'otes', 'Ġthe', 'Ġ$', 'm', '$', '-', 'tors', 'ion', 'Ġ', 'Ċ', 'sub', 'group', 'Ġscheme', 'Ġof', 'Ġ$', 'E', '$.', 'ĠĠĊ', 'Ċ', 'All', 'Ġformal', 'Ġgroups', 'Ġmentioned', 'Ġin', 'Ġthis', 'Ġpaper', 'Ġwill', 'Ġbe', 'Ġcomm', 'ut', 'ative', 'Ġand', 'Ġ', 'Ċ', 'one', '-', 'dimensional', '.', 'ĠĠĊ', 'Ċ', 'The', 'Ġterminology', 'Ġfor', 'Ġthe', 'Ġstructure', 'Ġof', 'Ġthe', 'ĠD', 'yer', '-', 'L', 'ash', 'of', '~', 'Ġtheory', 'Ġwill', 'Ġfollow', 'Ġ', 'Ċ', '\\', 'cite', '{', 'c', 'ong', '}', 'Ġand', 'Ġ\\', 'cite', '{', 'h', '2', 'p', '2', '};', 'Ġsome', 'Ġof', 'Ġthe', 'Ġnot', 'ions', 'Ġthere', 'Ġare', 'Ġtaken', 'Ġin', 'Ġturn', 'Ġ', 'Ċ', 'from', 'Ġ\\', 'cite', '{', 'B', 'W', '}', 'Ġand', 'Ġ\\', 'cite', '{', 'V', '}.', 'ĠĠĊ', 'Ċ', 'Ċ', '\\', 'section', '{', 'Total', 'Ġpower', 'Ġoperations', '}', 'Ċ', '\\', 'label', '{', 'sec', ':', 'total', '}', 'Ċ', 'Ċ', '\\', 'subs', 'ection', '{', 'A', 'Ġuniversal', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġand', 'Ġa', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġspectrum', '}', 'Ċ', '\\', 'label', '{', 'sub', 'sec', ':', 'ec', '}', 'Ċ', 'Ċ', 'A', 'ĠMor', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġof', 'Ġheight', 'Ġ2', 'Ġat', 'Ġthe', 'Ġprime', 'Ġ3', 'Ġhas', 'Ġits', 'Ġformal', 'Ġgroup', 'Ġas', 'Ġ', 'Ċ', 'the', 'Ġuniversal', 'Ġde', 'formation', 'Ġof', 'Ġa', 'Ġheight', '-', '2', 'Ġformal', 'Ġgroup', 'Ġover', 'Ġa', 'Ġperfect', 'Ġ', 'Ċ', 'field', 'Ġof', 'Ġcharacteristic', 'Ġ3', '.', 'Ġ', 'ĠGiven', 'Ġa', 'Ġsupers', 'ing', 'ular', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġover', 'Ġ', 'Ċ', 'such', 'Ġa', 'Ġfield', ',', 'Ġits', 'Ġformal', 'Ġcompletion', 'Ġat', 'Ġthe', 'Ġidentity', 'Ġproduces', 'Ġa', 'Ġformal', 'Ġ', 'Ċ', 'group', 'Ġof', 'Ġheight', 'Ġ2', '.', 'Ġ', 'ĠTo', 'Ġstudy', 'Ġpower', 'Ġoperations', 'Ġfor', 'Ġthe', 'Ġcorresponding', 'Ġ', 'Ċ', '$', 'E', '$', '-', 'the', 'ory', ',', 'Ġwe', 'Ġdo', 'Ġcalculations', 'Ġwith', 'Ġthe', 'Ġuniversal', 'Ġde', 'formation', 'Ġof', 'Ġthat', 'Ġ', 'Ċ', 'sup', 'ers', 'ing', 'ular', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġwhich', 'Ġis', 'Ġa', 'Ġfamily', 'Ġof', 'Ġel', 'li', 'ptic', 'Ġcurves', 'Ġwith', 'Ġa', 'Ġ', 'Ċ', '$', '\\', 'G', 'amma', '_', '1', '(', 'N', ')$', '-', 's', 'tructure', 'Ġ(', 'see', 'Ġ\\', 'cite', '[', 'Section', 'Ġ3', '.', '2', ']', '{', 'K', 'M', '})', 'Ġwhere', 'Ġ$', 'N', '$', 'Ġis', 'Ġprime', 'Ġto', 'Ġ3', '.', 'ĠĠ', 'Ċ', 'Here', 'Ġis', 'Ġa', 'Ġspecific', 'Ġmodel', 'Ġ(', 'cf', '.', '~', '\\', 'cite', '[', '4', '(', '4', '.', '6', 'a', ')]', '{', 'h', 'us', 'em', 'oller', '}).', 'ĠĠĊ', 'Ċ', '\\', 'begin', '{', 'prop', '}', 'Ċ', '\\', 'label', '{', 'prop', ':', 'C', '}', 'Ċ', 'ĠOver', 'Ġ${', '\\', 'mb', 'ĠZ', '}', 'Ġ[', '1', '/', '4', ']', '$', ',', 'Ġthe', 'Ġmoduli', 'Ġproblem', 'Ġof', 'Ġnon', 'sing', 'ular', 'Ġel', 'li', 'ptic', 'Ġcurves', 'ĠĊ', 'Ġwith', 'Ġa', 'Ġchoice', 'Ġof', 'Ġa', 'Ġpoint', 'Ġof', 'Ġexact', 'Ġorder', 'Ġ4', 'Ġand', 'Ġa', 'Ġnowhere', '-', 'van', 'ishing', 'ĠĊ', 'Ġinvari', 'ant', 'Ġone', '-', 'form', 'Ġis', 'Ġrepresented', 'Ġby', 'ĠĊ', 'Ġ\\', 'begin', '{', 'equ', 'ation', '}', 'Ċ', 'Ġ\\', 'label', '{', 'C', 'xy', '}', 'Ċ', 'Ġ', 'ĠC', 'Ġ\\', 'col', 'on', '\\', 'th', 'in', 'space', 'Ġy', '^', '2', 'Ġ+', 'Ġa', 'Ġx', 'Ġy', 'Ġ+', 'Ġa', 'Ġb', 'Ġy', 'Ġ=', 'Ġx', '^', '3', 'Ġ+', 'Ġb', 'Ġx', '^', '2', 'ĠĊ', 'Ġ\\', 'end', '{', 'equ', 'ation', '}', 'Ċ', 'Ġwith', 'Ġchosen', 'Ġpoint', 'Ġ$(', '0', ',', '0', ')$', 'Ġand', 'Ġone', '-', 'form', 'ĠĊ', 'Ġ$', 'dx', 'Ġ/', 'Ġ(', '2', 'Ġy', 'Ġ+', 'Ġa', 'Ġx', 'Ġ+', 'Ġa', 'Ġb', ')', 'Ġ=', 'Ġdy', 'Ġ/', 'Ġ(', '3', 'Ġx', '^', '2', 'Ġ+', 'Ġ2', 'Ġb', 'Ġx', 'Ġ-', 'Ġa', 'Ġy', ')$', 'Ġover', 'Ġthe', 'Ġgra', 'ded', 'ĠĊ', 'Ġring', 'ĠĊ', 'Ġ\\', '[', 'Ċ', 'Ġ', 'ĠS', '^', '\\', 'bul', 'let', 'Ġ\\', 'col', 'one', 'qq', 'Ġ{', '\\', 'mb', 'ĠZ', '}', 'Ġ[', '1', '/', '4', ']', 'Ġ[', 'a', ',', 'Ġb', ',', 'Ġ\\', 'Delta', '^', '{', '-', '1', '}', ']', 'ĠĊ', 'Ġ\\', ']', 'Ċ', 'Ġwhere', 'Ġ$', '|', 'a', '|', 'Ġ=', 'Ġ1', '$', ',', 'Ġ$', '|', 'b', '|', 'Ġ=', 'Ġ2', '$', ',', 'Ġand', 'Ġ$', '\\', 'Delta', 'Ġ=', 'Ġa', '^', '2', 'Ġb', '^', '4', 'Ġ(', 'a', '^', '2', 'Ġ-', 'Ġ1', '6', 'Ġb', ')', '$.', 'ĠĠ', 'Ċ', '\\', 'end', '{', 'prop', '}', 'Ċ', '\\', 'begin', '{', 'proof', '}', 'Ċ', 'ĠLet', 'Ġ$', 'P', '$', 'Ġbe', 'Ġthe', 'Ġchosen', 'Ġpoint', 'Ġof', 'Ġexact', 'Ġorder', 'Ġ4', '.', 'Ġ', 'ĠSince', 'Ġ$', '2', 'P', '$', 'Ġis', 'Ġ2', '-', 'tors', 'ion', ',', 'ĠĊ', 'Ġthe', 'Ġtang', 'ent', 'Ġline', 'Ġof', 'Ġthe', 'Ġel', 'li', 'ptic', 'Ġcurve', 'Ġat', 'Ġ$', 'P', '$', 'Ġpasses', 'Ġthrough', 'Ġ$', '2', 'P', '$', ',', 'Ġand', 'ĠĊ', 'Ġthe', 'Ġtang', 'ent', 'Ġline', 'Ġat', 'Ġ$', '2', 'P', '$', 'Ġpasses', 'Ġthrough', 'Ġthe', 'Ġidentity', 'Ġat', 'Ġthe', 'Ġinfin', 'ity', '.', 'ĠĠĊ', 'ĠWith', 'Ġthis', 'Ġobservation', ',', 'Ġthe', 'Ġrest', 'Ġof', 'Ġthe', 'Ġproof', 'Ġis', 'Ġanalog', 'ous', 'Ġto', 'Ġthat', 'Ġof', 'ĠĊ', 'Ġ\\', 'cite', '[', 'Pro', 'position', 'Ġ3', '.', '2', ']', '{', 'tm', 'f', '3', '}.', 'ĠĠ', 'Ċ', '\\', 'end', '{', 'proof', '}', 'Ċ', 'Ċ', 'Over', 'Ġa', 'Ġfinite', 'Ġfield', 'Ġof', 'Ġcharacteristic', 'Ġ3', ',', 'Ġ$', 'C', '$', 'Ġis', 'Ġsupers', 'ing', 'ular', 'Ġprecisely', 'Ġ', 'Ċ', 'when', 'Ġthe', 'Ġquantity', 'Ġ', 'Ċ', '\\', 'begin', '{', 'equ', 'ation', '}', 'Ċ', '\\', 'label', '{', 'H', '}', 'Ċ', 'ĠH', 'Ġ\\', 'col', 'one', 'qq', 'Ġa', '^', '2', 'Ġ+', 'Ġb', 'Ġ', 'Ċ', '\\', 'end', '{', 'equ', 'ation', '}', 'Ċ', 'van', 'ishes', 'Ġ(', 'cf', '.', '~', '\\', 'cite', '[', 'V', '.', '4', '.', '1', 'a', ']', '{', 'A', 'EC', '}).', 'Ġ', 'ĠAs', 'Ġ$(', '3', ',', 'H', ')$', 'Ġis', 'Ġa', 'Ġhom', 'ogene', 'ous', 'Ġmax', 'imal', 'Ġ', 'Ċ', 'ide', 'al', 'Ġof', 'Ġ$', 'S', '^', '\\', 'bul', 'let', '$', 'Ġcorresponding', 'Ġto', 'Ġthe', 'Ġclosed', 'Ġsubs', 'che', 'me', 'Ġ${', '\\', 'rm', 'ĠSpec', '\\', 'th', 'in', 'space', '}', 'Ġ{', '\\', 'mb', 'ĠF', '}', '_', '3', '$', ',', 'Ġthe', 'Ġ', 'Ċ', 'sup', 'ers', 'ing', 'ular', 'Ġloc', 'us', 'Ġconsists', 'Ġof', 'Ġa', 'Ġsingle', 'Ġclosed', 'Ġpoint', ',', 'Ġand', 'Ġ$', 'C', '$', 'Ġrestrict', 's', 'Ġ', 'Ċ', 'to', 'Ġ${', '\\', 'mb', 'ĠF', '}', '_', '3', '$', 'Ġas', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'ĠC', '_', '0', 'Ġ\\', 'col', 'on', '\\', 'th', 'in', 'space', 'Ġy', '^', '2', 'Ġ+', 'Ġx', 'Ġy', 'Ġ-', 'Ġy', 'Ġ=', 'Ġx', '^', '3', 'Ġ-', 'Ġx', '^', '2', '.', 'ĠĠ', 'Ċ', '\\', ']', 'Ċ', 'Ċ', 'From', 'Ġthe', 'Ġabove', 'Ġuniversal', 'Ġde', 'formation', 'Ġ$', 'C', '$', 'Ġof', 'Ġ$', 'C', '_', '0', '$', ',', 'Ġwe', 'Ġnext', 'Ġproduce', 'Ġa', 'Ġ', 'Ċ', 'M', 'or', 'ava', 'Ġ$', 'E', '$', '-', 'the', 'ory', 'Ġspectrum', 'Ġwhich', 'Ġis', 'Ġ2', '-', 'period', 'ic', '.', 'Ġ', 'ĠWe', 'Ġfollow', 'Ġthe', 'Ġ', 'Ċ', 'con', 'vention', 'Ġthat', 'Ġelements', 'Ġin', 'Ġal', 'gebra', 'ic', 'Ġdegree', 'Ġ$', 'n', '$', 'Ġlie', 'Ġin', 'Ġtop', 'ological', 'Ġ', 'Ċ', 'degree', 'Ġ$', '2', 'n', '$', ',', 'Ġand', 'Ġwork', 'Ġin', 'Ġan', 'Ġaff', 'ine', 'Ġ\\', "'", 'et', 'ale', 'Ġcoordinate', 'Ġchart', 'Ġof', 'Ġthe', 'Ġ', 'Ċ', 'weight', 'ed', 'Ġproject', 'ive', 'Ġspace', 'Ġ${', '\\', 'rm', 'ĠPro', 'j', '\\', 'th', 'in', 'space', '}', 'Ġ{', '\\', 'mb', 'ĠZ', '}', 'Ġ[', '1', '/', '4', ']', 'Ġ[', 'a', ',', 'Ġb', ']', '$', 'Ġ(', 'see', 'ĠRem', 'ark', 'Ġ', 'Ċ', '\\', 'ref', '{', 'rm', 'k', ':', 'gra', 'ding', '}).', 'Ġ', 'ĠDefine', 'Ġelements', 'Ġ$', 'u', '$', 'Ġand', 'Ġ$', 'c', '$', 'Ġsuch', 'Ġthat', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġa', 'Ġ=', 'Ġu', 'Ġc', 'Ġ\\', 'q', 'quad', 'Ġ{', '\\', 'rm', 'Ġand', '}', 'Ġ\\', 'q', 'quad', 'Ġb', 'Ġ=', 'Ġu', '^', '2', '.', 'ĠĠ', 'Ċ', '\\', ']', 'Ċ', 'Cons', 'ider', 'Ġthe', 'Ġgra', 'ded', 'Ġring', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'ĠS', '^', '\\', 'bul', 'let', 'Ġ[', 'u', '^', '{', '-', '1', '}', ']', 'Ġ\\', 'c', 'ong', 'Ġ{', '\\', 'mb', 'ĠZ', '}', 'Ġ[', '1', '/', '4', ']', 'Ġ[', 'a', ',', 'Ġ\\', 'Delta', '^', '{', '-', '1', '}', ']', 'Ġ[', 'u', '^', '{\\', 'pm', '1', '}', ']', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'where', 'Ġ$', '|', 'u', '|', 'Ġ=', 'Ġ1', '$', ',', 'Ġand', 'Ġden', 'ote', 'Ġby', 'Ġ$', 'S', '$', 'Ġits', 'Ġsub', 'ring', 'Ġof', 'Ġelements', 'Ġin', 'Ġdegree', 'Ġ0', 'Ġ', 'Ċ', 'so', 'Ġthat', 'Ġ', 'Ċ', '\\', 'begin', '{', 'equ', 'ation', '}', 'Ċ', '\\', 'label', '{', 'S', '}', 'Ċ', 'ĠS', 'Ġ\\', 'c', 'ong', 'Ġ{', '\\', 'mb', 'ĠZ', '}', 'Ġ[', '1', '/', '4', ']', 'Ġ[', 'c', ',', 'Ġ\\', 'delta', '^', '{', '-', '1', '}', ']', 'Ġ', 'Ċ', '\\', 'end', '{', 'equ', 'ation', '}', 'Ċ', 'where', 'Ġ$', '\\', 'delta', 'Ġ=', 'Ġu', '^', '{', '-', '1', '2', '}', 'Ġ\\', 'Delta', 'Ġ=', 'Ġc', '^', '2', 'Ġ(', 'c', '^', '2', 'Ġ-', 'Ġ1', '6', ')', '$.', 'Ġ', 'ĠWrite', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġ\\', 'wide', 'hat', '{', 'S', '}', 'Ġ=', 'Ġ{', '\\', 'mb', 'ĠZ', '}', '_', '9', 'Ġ\\', 'll', 'bra', 'cket', 'Ġh', 'Ġ\\', 'rr', 'bra', 'cket', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'where', 'Ġ', 'Ċ', '\\', 'begin', '{', 'equ', 'ation', '}', 'Ċ', '\\', 'label', '{', 'h', '}', 'Ċ', 'Ġh', 'Ġ\\', 'col', 'one', 'qq', 'Ġu', '^', '{', '-', '2', '}', 'ĠH', 'Ġ=', 'Ġc', '^', '2', 'Ġ+', 'Ġ1', '.', 'ĠĠ', 'Ċ', '\\', 'end', '{', 'equ', 'ation', '}', 'Ċ', 'Let', 'Ġ$', 'i', '$', 'Ġbe', 'Ġan', 'Ġelement', 'Ġgenerating', 'Ġ${', '\\', 'mb', 'ĠZ', '}', '_', '9', '$', 'Ġover', 'Ġ${', '\\', 'mb', 'ĠZ', '}', '_', '3', '$', 'Ġwith', 'Ġ$', 'i', '^', '2', 'Ġ=', 'Ġ-', '1', '$.', 'ĠĠ', 'Ċ', 'We', 'Ġmay', 'Ġchoose', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġc', 'Ġ\\', 'equiv', 'Ġi', 'Ġ~', '~', '{\\', 'rm', 'Ġmod', '}', '~', 'Ġ(', '3', ',', 'h', ')', 'Ġ', 'Ċ', '\\', ']', 'Ċ', 'and', 'Ġwe', 'Ġhave', 'Ġ', 'Ċ', '\\', '[', 'Ċ', 'Ġ\\', 'delta', 'Ġ\\', 'equiv', 'Ġ-', '1', 'Ġ~', '~', '{\\', 'rm', 'Ġmod']
+[Decoded Text]:
+\section{Introduction}
+
+Suppose $E$ is a commutative $S$-algebra, in the sense of \cite{EKMM}, 
+and $A$ is a commutative $E$-algebra.  We want to capture the properties 
+and underlying structure of the homotopy groups $\pi_* A = A_*$ of $A$, 
+by studying operations associated to the cohomology theory that $E$ 
+represents.  
+
+An important family of cohomology operations, called {\em power 
+operations}, is constructed via the extended powers.  Specifically, 
+consider the {\em $m$'th extended power} functor 
+\[
+ {\mb P}_E^m (-) \coloneqq (-)^{\wedge_E m} / \Sigma_m \colon\thinspace {\rm Mod}_E \to {\rm Mod}_E 
+\]
+on the category of $E$-modules, which sends an $E$-module to its 
+$m$-fold smash product over $E$ modulo the action by the symmetric group 
+on $m$ letters.  The ${\mb P}_E^m (-)$'s assemble together to give the {\em 
+free commutative $E$-algebra} functor 
+\[
+ {\mb P}_E (-) \coloneqq \bigvee_{m \geq 0} {\mb P}_E^m (-) \colon\thinspace {\rm Mod}_E \to {\rm Alg}_E 
+\]
+from the category of $E$-modules to the category of commutative 
+$E$-algebras.  These functors descend to homotopy categories.  In 
+particular, each $\alpha \in \pi_{d+i}~{\mb P}_E^m (\Sigma^d E)$ gives rise to a 
+power operation 
+\[
+ Q_\alpha \colon\thinspace A_d \to A_{d+i} 
+\]
+(cf.~\cite[Sections I.2 and IX.1]{H_infty} and \cite[Section 3]{cong}).  
+
+Under the action of power operations, $A_*$ is an algebra over some 
+operad in $E_*$-modules involving the structure of $E_* B\Sigma_m$ for 
+all $m$.  This operad is traditionally called a {\em Dyer-Lashof~ algebra}, or 
+more precisely, a Dyer-Lashof~ {\em theory} as the {\em algebraic theory} of 
+power operations acting on the homotopy groups of commutative 
+$E$-algebras (cf.~\cite[Chapters III, VIII, and IX]{H_infty} and 
+\cite[Section 9]{lpo}).  
+
+A specific case is when $E$ represents a Morava $E$-theory of height $n$ 
+and $A$ is $K(n)$-local.  Morava $E$-theory spectra play a crucial role 
+in modern stable homotopy theory, particularly in the work of Ando, 
+Hopkins, and Strickland on the topological approach to elliptic genera 
+(see \cite{cube}).  As recalled in \cite[1.5]{cong}, the $K(n)$-local 
+$E$-Dyer-Lashof~ theory is largely understood based on work of those authors.  In 
+\cite{cong}, Rezk maps out the foundations of this theory.  He gives a 
+congruence criterion for an algebra over the Dyer-Lashof~ theory 
+(\cite[Theorem A]{cong}).  This enables one to study the Dyer-Lashof~ 
+{\em theory}, which models all the algebraic structure naturally 
+adhering to $A_*$, by working with a certain associative ring $\Gamma$ as 
+the Dyer-Lashof~ {\em algebra}.  Moreover, Rezk provides a geometric description 
+of this congruence criterion, in terms of sheaves on the moduli problem 
+of deformations of formal groups and Frobenius isogenies (see 
+\cite[Theorem B]{cong}).  This connects the structure of $\Gamma$ to the 
+geometry underlying $E$, moving one step forward from a workable object 
+$\Gamma$ to things that are computable.  In a companion paper \cite{h2p2}, 
+Rezk gives explicit calculations of the Dyer-Lashof~ theory for a specific Morava 
+$E$-theory of height $n = 2$ at the prime 2.  
+
+The purpose of this paper is to make available calculations analogous to 
+some of the results in \cite{h2p2}, at the prime 3, together with 
+calculations of the corresponding power operations on the 
+$K(1)$-localization of the Morava $E$-theory spectrum.  
+
+
+\subsection{Outline of the paper}
+
+As in \cite{h2p2}, the computation of power operations in this paper 
+follows the approach of \cite{steenrod}: one first defines a total power 
+operation, and then uses the computation of the cohomology of the 
+classifying space $B\Sigma_m$ for the symmetric group to obtain 
+individual power operations.  These two steps are carried out in 
+Sections \ref{sec:total} and \ref{sec:individual} respectively.  
+
+In Section \ref{sec:total}, by doing calculations with elliptic curves 
+associated to our Morava $E$-theory $E$, we give formulas for the total 
+power operation $\psi^3$ on $E_0$ and the ring $S_3$ which represents the 
+corresponding moduli problem.  
+
+In Section \ref{sec:individual}, based on calculations of 
+$E^* B\Sigma_m$ in \cite{Str98} as reflected in the formula for $S_3$, 
+we define individual power operations, and derive the relations they 
+satisfy.  In view of the general structures studied in \cite{cong}, we 
+then get an explicit description of the Dyer-Lashof~ algebra $\Gamma$ for 
+$K(2)$-local commutative $E$-algebras.  
+
+In Section \ref{sec:K(1)}, we describe the relationship between the 
+total power operation $\psi^3$, at height 2, and the corresponding 
+$K(1)$-local power operations.  We then derive formulas for the latter 
+from the calculations in Section \ref{sec:total}.  
+
+\begin{rmk}
+\label{rmk:grading}
+ In Section \ref{sec:total}, we do calculations with a universal 
+ elliptic curve over {\em all} of the moduli stack which is an affine 
+ open subscheme of a weighted projective space (cf.~Proposition 
+ \ref{prop:C}).  At the prime 3, the supersingular locus consists of a 
+ single closed point, and the corresponding Morava $E$-theory arises 
+ {\em locally} in an affine coordinate chart of this weighted projective 
+ space containing the supersingular locus.  In this paper we choose a 
+ particular affine coordinate chart for computing the homotopy groups of 
+ the $E$-theory spectrum and the power operations; we hope that the 
+ generality of the calculations in Section \ref{sec:total} makes it 
+ easier to work with other coordinate charts as well.  
+\end{rmk}
+
+\begin{rmk}
+\label{rmk:parameter}
+ The ring $S_3$ turns out to be an algebra with one generator over the 
+ base ring where our elliptic curve is defined (cf.~\isog{i} and 
+ \eqref{S_3}).  This generator appears as a parameter in the formulas 
+ for the total power operation $\psi^3$, and is responsible for how the 
+ individual power operations are defined and how their formulas look.  
+ Different choices of this parameter result in different bases of the 
+ Dyer-Lashof~ algebra $\Gamma$.  The parameter in this paper comes from the relative 
+ cotangent space of the elliptic curve at the identity (see \isog{iv}, 
+ Corollary \ref{cor:K'}, and Remark \ref{rmk:K'}).  This choice is 
+ convenient for deriving Adem relations in \q{iv}, and it fits into the 
+ treatment of gradings in \cite[Section 2]{cong} (see \go{ii} and 
+ Theorem \ref{thm:gamma}).  We should point out that our choice is by no 
+ means canonical.  We do not know yet, as part of the structure of the 
+ Dyer-Lashof~ algebra, if there is a canonical basis which is both geometrically 
+ interesting and computationally convenient.  Somewhat surprisingly, 
+ although it appears to come from different considerations, our choice 
+ has an analog at the prime 2 which coincides with the parameter used in 
+ \cite{h2p2} (see Remarks \ref{rmk:K} and \ref{rmk:KK'}).  The 
+ calculations follow a recipe in hope of generalizing to other Morava 
+ $E$-theories of height 2; we hope to address these matters and 
+ recognize more of the general patterns based on further computational 
+ evidence.  
+\end{rmk}
+
+
+\subsection{Acknowledgements}
+
+I thank Charles Rezk for his encouragement on this work, and for his 
+observation in a correspondence which led to Proposition 
+\ref{prop:frob^2} and Corollary \ref{cor:K'}.  
+
+I thank Kyle Ormsby for helpful discussions on Section \ref{sec:total}, 
+and for directing me to places in the literature.  
+
+I thank Tyler Lawson for the sustained support from him I received as a 
+student.  
+
+
+\subsection{Conventions}
+
+Let $p$ be a prime, $q$ a power of $p$, and $n$ a positive integer.  We 
+use the symbols 
+\[
+ {\mb F}_q\text{,}~~{\mb Z}_q\text{,}~~{\rm and}~~{\mb Z}/n 
+\]
+to denote a field with $q$ elements, the ring of $p$-typical Witt 
+vectors over ${\mb F}_q$, and the additive group of integers modulo $n$, 
+respectively.  
+
+If $R$ is a ring, then $R\llbracket x \rrbracket$ and $R (\!(x)\!)$ 
+denote the rings of formal power series and formal Laurent series over 
+$R$ in the variable $x$ respectively.  If $I \subset R$ is an ideal, 
+then $R_I^\wedge$ denotes the completion of $R$ with respect to $I$.  
+
+If $E$ is an elliptic curve and $m$ is an integer, then $[m]$ denotes 
+the multiplication-by-$m$ map on $E$, and $E[m]$ denotes the $m$-torsion 
+subgroup scheme of $E$.  
+
+All formal groups mentioned in this paper will be commutative and 
+one-dimensional.  
+
+The terminology for the structure of the Dyer-Lashof~ theory will follow 
+\cite{cong} and \cite{h2p2}; some of the notions there are taken in turn 
+from \cite{BW} and \cite{V}.  
+
+
+\section{Total power operations}
+\label{sec:total}
+
+\subsection{A universal elliptic curve and a Morava $E$-theory spectrum}
+\label{subsec:ec}
+
+A Morava $E$-theory of height 2 at the prime 3 has its formal group as 
+the universal deformation of a height-2 formal group over a perfect 
+field of characteristic 3.  Given a supersingular elliptic curve over 
+such a field, its formal completion at the identity produces a formal 
+group of height 2.  To study power operations for the corresponding 
+$E$-theory, we do calculations with the universal deformation of that 
+supersingular elliptic curve which is a family of elliptic curves with a 
+$\Gamma_1(N)$-structure (see \cite[Section 3.2]{KM}) where $N$ is prime to 3.  
+Here is a specific model (cf.~\cite[4(4.6a)]{husemoller}).  
+
+\begin{prop}
+\label{prop:C}
+ Over ${\mb Z} [1/4]$, the moduli problem of nonsingular elliptic curves 
+ with a choice of a point of exact order 4 and a nowhere-vanishing 
+ invariant one-form is represented by 
+ \begin{equation}
+ \label{Cxy}
+  C \colon\thinspace y^2 + a x y + a b y = x^3 + b x^2 
+ \end{equation}
+ with chosen point $(0,0)$ and one-form 
+ $dx / (2 y + a x + a b) = dy / (3 x^2 + 2 b x - a y)$ over the graded 
+ ring 
+ \[
+  S^\bullet \coloneqq {\mb Z} [1/4] [a, b, \Delta^{-1}] 
+ \]
+ where $|a| = 1$, $|b| = 2$, and $\Delta = a^2 b^4 (a^2 - 16 b)$.  
+\end{prop}
+\begin{proof}
+ Let $P$ be the chosen point of exact order 4.  Since $2P$ is 2-torsion, 
+ the tangent line of the elliptic curve at $P$ passes through $2P$, and 
+ the tangent line at $2P$ passes through the identity at the infinity.  
+ With this observation, the rest of the proof is analogous to that of 
+ \cite[Proposition 3.2]{tmf3}.  
+\end{proof}
+
+Over a finite field of characteristic 3, $C$ is supersingular precisely 
+when the quantity 
+\begin{equation}
+\label{H}
+ H \coloneqq a^2 + b 
+\end{equation}
+vanishes (cf.~\cite[V.4.1a]{AEC}).  As $(3,H)$ is a homogeneous maximal 
+ideal of $S^\bullet$ corresponding to the closed subscheme ${\rm Spec\thinspace} {\mb F}_3$, the 
+supersingular locus consists of a single closed point, and $C$ restricts 
+to ${\mb F}_3$ as 
+\[
+ C_0 \colon\thinspace y^2 + x y - y = x^3 - x^2.  
+\]
+
+From the above universal deformation $C$ of $C_0$, we next produce a 
+Morava $E$-theory spectrum which is 2-periodic.  We follow the 
+convention that elements in algebraic degree $n$ lie in topological 
+degree $2n$, and work in an affine \'etale coordinate chart of the 
+weighted projective space ${\rm Proj\thinspace} {\mb Z} [1/4] [a, b]$ (see Remark 
+\ref{rmk:grading}).  Define elements $u$ and $c$ such that 
+\[
+ a = u c \qquad {\rm and} \qquad b = u^2.  
+\]
+Consider the graded ring 
+\[
+ S^\bullet [u^{-1}] \cong {\mb Z} [1/4] [a, \Delta^{-1}] [u^{\pm1}] 
+\]
+where $|u| = 1$, and denote by $S$ its subring of elements in degree 0 
+so that 
+\begin{equation}
+\label{S}
+ S \cong {\mb Z} [1/4] [c, \delta^{-1}] 
+\end{equation}
+where $\delta = u^{-12} \Delta = c^2 (c^2 - 16)$.  Write 
+\[
+ \widehat{S} = {\mb Z}_9 \llbracket h \rrbracket 
+\]
+where 
+\begin{equation}
+\label{h}
+ h \coloneqq u^{-2} H = c^2 + 1.  
+\end{equation}
+Let $i$ be an element generating ${\mb Z}_9$ over ${\mb Z}_3$ with $i^2 = -1$.  
+We may choose 
+\[
+ c \equiv i ~~{\rm mod}~ (3,h) 
+\]
+and we have 
+\[
+ \delta \equiv -1 ~~{\rm mod
+

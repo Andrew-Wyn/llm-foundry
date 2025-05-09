@@ -71,7 +71,7 @@ train_loader:
     streams:
       # it web
       it_culturax:
-        local: ${variables.data_local}/it/culturax-filtered
+        local: ${variables.data_local}/it/culturax
         # local: ${variables.data_local}
         split: train
         repeat: 1.5
@@ -87,7 +87,7 @@ train_loader:
         local: ${variables.data_local}/it/wikipedia_it
         split: train
       it_books:
-        local: ${variables.data_local}/it/books_it
+        local: ${variables.data_local}/it/gutenberg
         split: train
         repeat: 2.0
       it_eurlex:
@@ -131,10 +131,10 @@ train_loader:
         local: ${variables.data_local}/en/stackexchange
         split: train
       en_wikipedia:
-        local: ${variables.data_local}/en/wikipedia_en
+        local: ${variables.data_local}/en/wikipedia
         split: train
       en_books:
-        local: ${variables.data_local}/en/gutenberg_en
+        local: ${variables.data_local}/en/gutenberg
         split: train
 
       # code
@@ -180,7 +180,7 @@ algorithms:
 
 # max_duration = num_tokens / (max_seq_len * global_train_batch_size)
 # ~2T tokens = max_seq_len * global_train_batch_size * max_duration
-# ~2T is 2481170561843
+# ~2T is 2_481_170_561_843
 # max duration is then 2481170561843 / (4096 * 1024) = 591_558
 # max_duration: 591558ba
 max_duration: 1ba

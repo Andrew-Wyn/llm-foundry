@@ -311,7 +311,6 @@ def convert_dataset_hf(
     eos_text: str,
     no_wrap: bool,
     num_workers: Optional[int],
-    max_tokens: Optional[int] = None,
 ) -> None:
     """Converts HuggingFace datasets to MDS format.
 
@@ -332,18 +331,12 @@ def convert_dataset_hf(
     Raises:
         KeyError: If constants are not defined for the split
     """
-    # try:
-    #     dataset_constants = CONSTS[dataset]
-    # except KeyError:
-    #     raise ValueError(
-    #         f'Constants for dataset "{dataset}" not found. Currently only "the_pile" and "allenai/c4" are supported.',
-    #     )
-
-    is_local = os.path.isdir(dataset) and os.path.exists(os.path.join(dataset, "dataset_dict.json"))
-    dataset_constants = CONSTS.get(dataset, None)
-
-    if not dataset_constants and not is_local:
-        print(f"No dataset constants found for '{dataset}', using default handling.")
+    try:
+        dataset_constants = CONSTS[dataset]
+    except KeyError:
+        raise ValueError(
+            f'Constants for dataset "{dataset}" not found. Currently only "the_pile" and "allenai/c4" are supported.',
+        )
 
     if concat_tokens is not None and tokenizer is not None:
         mode = ConcatMode.CONCAT_TOKENS
@@ -357,25 +350,14 @@ def convert_dataset_hf(
         columns = {'text': 'str'}
 
     for split_name in splits:
-        # try:
-        #     split = dataset_constants.splits[split_name]
-        # except KeyError:
-        #     raise KeyError(f'Constants not defined for split {split_name}.')
-        # hf_split = split.hf_split
-        # folder_split = split.folder_split
-        # expected_num_samples = split.raw_samples
-        # truncate_num_samples = split.truncated_samples
-
-        if dataset_constants and split_name in dataset_constants.splits:
+        try:
             split = dataset_constants.splits[split_name]
-            hf_split = split.hf_split
-            folder_split = split.folder_split
-            truncate_num_samples = split.truncated_samples
-        else:
-            hf_split = split_name
-            folder_split = split_name
-            truncate_num_samples = None
-
+        except KeyError:
+            raise KeyError(f'Constants not defined for split {split_name}.')
+        hf_split = split.hf_split
+        folder_split = split.folder_split
+        expected_num_samples = split.raw_samples
+        truncate_num_samples = split.truncated_samples
         # Only generate the splits requested
         if folder_split not in splits:
             continue
@@ -402,28 +384,22 @@ def convert_dataset_hf(
             truncate_num_samples=truncate_num_samples,
         )
 
-        # if expected_num_samples is not None and concat_tokens is not None:
-        #     denominator = truncate_num_samples if truncate_num_samples is not None else _est_progress_denominator(
-        #         total_samples=expected_num_samples,
-        #         chars_per_sample=dataset_constants.chars_per_sample,
-        #         chars_per_token=dataset_constants.chars_per_token,
-        #         mode=mode,
-        #         max_length=concat_tokens,
-        #     )
-        # else:
-        #     denominator = None
-        denominator = None
+        if expected_num_samples is not None and concat_tokens is not None:
+            denominator = truncate_num_samples if truncate_num_samples is not None else _est_progress_denominator(
+                total_samples=expected_num_samples,
+                chars_per_sample=dataset_constants.chars_per_sample,
+                chars_per_token=dataset_constants.chars_per_token,
+                mode=mode,
+                max_length=concat_tokens,
+            )
+        else:
+            denominator = None
 
         # Write samples
         print(f'Converting {folder_split} to MDS format...')
         print(
             f'Note: the progress bar is based on the dataset length before tokenization, and may finish at a value before 100%.',
         )
-
-        total_num_tokens = 0
-        # print(max_tokens)
-        # exit()
-
         with MDSWriter(
             columns=columns,
             out=os.path.join(out_root, folder_split),
@@ -435,22 +411,10 @@ def convert_dataset_hf(
                     desc=folder_split,
                     total=denominator,
                 ):
-                    num_tokens = sample.pop("num_tokens")
                     out.write(sample)
-                    total_num_tokens += num_tokens
-                    if max_tokens and total_num_tokens >= max_tokens:
-                        print(f"Max tokens {total_num_tokens} reached, stop saving samples.")
-                        break
             else:
                 for sample in tqdm(samples, desc=folder_split):
-                    num_tokens = sample.pop("num_tokens")
                     out.write(sample)
-                    total_num_tokens += num_tokens
-                    if max_tokens and total_num_tokens >= max_tokens:
-                        print(f"Max tokens {total_num_tokens} reached, stop saving samples.")
-                        break
-
-            print(f"Processing done, saved {total_num_tokens} tokens.")
 
 
 def convert_dataset_hf_from_args(
@@ -466,7 +430,6 @@ def convert_dataset_hf_from_args(
     eos_text: Optional[str],
     no_wrap: bool,
     num_workers: Optional[int],
-    max_tokens: Optional[int],
 ) -> None:
     """A wrapper for `convert_dataset_hf` that parses arguments.
 
@@ -524,5 +487,4 @@ def convert_dataset_hf_from_args(
         eos_text=eos_text if eos_text else '',
         no_wrap=no_wrap,
         num_workers=num_workers,
-        max_tokens=max_tokens
     )

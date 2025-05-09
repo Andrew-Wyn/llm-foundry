@@ -155,7 +155,9 @@ class ConcatTokensDataset(AbstractConcatTokensDataset):
         buffer = []
         for sample in self.hf_dataset:
             encoded = self.tokenizer(
-                sample['text'],
+                # use key 'text if exists, otherwise use key 'input_ids'
+                sample.get('text', sample.get('raw_content')),
+                # sample['text'],
                 truncation=False,
                 padding=False,
             )

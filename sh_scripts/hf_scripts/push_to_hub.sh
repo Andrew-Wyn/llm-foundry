@@ -4,9 +4,9 @@
 # Set up directories paths
 BASE_DIR=/leonardo/home/userexternal/$(whoami)/minerva/llm-foundry
 PYENV="$BASE_DIR"/llmfoundry-venv
-DATA_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva/replica
+DATA_DIR=/leonardo_scratch/large/userexternal/$(whoami)
 export HF_HOME="$DATA_DIR"/.cache/hf_home/
-HF_CPT_DIR="$DATA_DIR"/huggingface-cpt
+HF_CPT_DIR="$DATA_DIR"/minerva/replica/huggingface-cpt
 
 # Optionally push to main branch
 run_name=

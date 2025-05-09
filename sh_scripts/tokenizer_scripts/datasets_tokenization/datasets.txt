@@ -1,0 +1,46 @@
+List of dataset paths:
+
+JSON
+• RedPajama-v2: /leonardo/prod/data/ai/red_pajama/2.0
+• StackExchange: /leonardo/prod/data/ai/red_pajama/2.0
+
+HF
+• CulturaX: 
+    /leonardo/prod/data/ai/culturax/2309 DONE
+• Wikipedia: wikimedia/wikipedia (*):
+    /leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/wikipedia/it DONE
+    /leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/wikipedia/en DONE
+• EurLex: NLP-AUEB/eurlex (*):
+    /leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/eurlex DONE
+• FineWeb: HuggingFaceFW/fineweb (*):
+
+
+JSONL
+• Gazzetta Ufficiale: /leonardo_scratch/fast/IscrB_medit/data/gazetta/gazetta.jsonl DONE
+• Gutenberg (IT): /leonardo_scratch/fast/IscrB_medit/data/books_it/gutenberg.jsonl DONE
+• Gutenberg (EN): /leonardo_scratch/fast/IscrB_medit/data/books_en/gutenberg.jsonl DONE
+• Wikisource (IT): /leonardo_scratch/fast/IscrB_medit/data/books_it/wikisource_it_books_clean.jsonl DONE
+
+• ArXiv: /leonardo_scratch/fast/IscrB_medit/data/arxiv DONE
+• The StackV2: /leonardo_scratch/fast/IscrB_medit/data/starcoder2_smol_batches
+
+culturax        108_367_167_488
+wikipedia it    0_750_039_040
+wikipedia en    3_139_762_176
+eurlex          0_042_809_344
+gutenberg it    0_141_430_784
+gutenberg en    6_909_341_696
+gazzetta        3_186_950_144
+wikisource it   0_035_639_296
+arxiv           32_933_625_856
+
+-----------------------------
+starcoder/1     41_578168320
+starcoder/2     41_643741184
+
+83221909504
+
+-----------------------------
+
+
+

@@ -53,6 +53,8 @@ def build_hf_dataset(
     else:
         data_files = path
 
+    print(f'Loading json dataset with hf function!')
+    print(f'This may take a while...')
     hf_dataset = hf_datasets.load_dataset(
         'json',
         data_files=data_files,
@@ -219,6 +221,8 @@ def convert_dataset_json_from_args(
         ValueError(
             'When setting --concat_tokens, you must specify a --tokenizer',
         )
+
+    print(f'At least here!!!')
 
     # now that we have validated them, change BOS/EOS to strings
     if bos_text is None:
