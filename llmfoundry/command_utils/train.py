@@ -8,6 +8,7 @@ import warnings
 from typing import Any, Optional, Union
 
 import torch
+import random
 import torch.distributed
 from composer import ComposerModel, Trainer
 from composer.callbacks.checkpoint_saver import CheckpointSaver
@@ -62,6 +63,25 @@ from llmfoundry.utils.exceptions import (
 from llmfoundry.utils.registry_utils import import_file
 
 log = logging.getLogger(__name__)
+
+
+## TODO: TO CHECK 
+def get_node_signal_file_name_kostyl(rng: Optional[random.Random] = None) -> str:
+    """Returns a file name to use for a file based wait within a node.
+
+    The file name will contain a randomly generated string to avoid conflicts.
+    Note: This file name will be the same on each node, so that it can be used for a file based wait.
+
+    Returns:
+        str: The name of the file that will be created to signal the end of a node's training.
+    """
+
+    random_string = "kek"
+    node_rank = dist.get_node_rank()
+    file_name = f"._signal_file_node{node_rank}_{random_string}"
+    return file_name
+
+dist.get_node_signal_file_name = get_node_signal_file_name_kostyl
 
 
 def validate_config(train_config: TrainConfig):
