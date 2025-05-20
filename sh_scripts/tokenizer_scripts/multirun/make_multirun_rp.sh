@@ -1,6 +1,35 @@
 #!/bin/bash
 
-#SBATCH --job-name=rp-head-1-2                         # Job name
+
+# Huggingface home
+export HF_HOME=/leonardo_scratch/large/userexternal/$(whoami)/.cache/hf_home
+
+# Automatically generate directory and set paths
+BASE_DIR=/leonardo/home/userexternal/$(whoami)/minerva/llm-foundry
+PYENV="$BASE_DIR"/llmfoundry-venv
+LOG_DIR="$BASE_DIR"/logs/data-processing
+mkdir -p $LOG_DIR
+
+MULTIRUN_DIR=$BASE_DIR/sh_scripts/tokenizer_scripts/multirun/
+TOKENIZER=sapienzanlp/Minerva-7B-base-v1.0
+
+
+for i in {1..9}; do 
+for j in {1..3}; do
+
+# Set the job name
+PARTITION=head
+JOB_NAME="rp_"$PARTITION"_""$i"_"$j"
+
+DATA=/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/redpajamas-$PARTITION/$i/$j #$index
+OUTPUT_DIR=/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/processed/it/redpajama-$PARTITION/$i/$j/train 
+
+
+# --- Generate SLURM script rp_n_m_$JOB_NAME.sh ---
+cat <<EOF > $MULTIRUN_DIR/$JOB_NAME.sh
+#!/bin/bash
+
+#SBATCH --job-name=rp-$PARTITION-$i-$j                 # Job name
 #SBATCH --output=/leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/logs/data-processing/%x-%j.out
 #SBATCH --error=/leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/logs/data-processing/%x-%j.err
 
@@ -15,9 +44,6 @@
 
 
 # Set up directories paths
-export BASE_DIR=/leonardo/home/userexternal/$(whoami)/minerva/llm-foundry
-
-export PYENV="$BASE_DIR"/llmfoundry-venv
 source "$PYENV"/bin/activate
 
 DATA_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva/replica
@@ -30,12 +56,7 @@ export TRANSFORMERS_OFFLINE=1
 cd $BASE_DIR
 
 
-TOKENIZER=sapienzanlp/Minerva-7B-base-v1.0
 
-
-# for index in {1..9}; do
-DATA=/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/redpajamas-head/1/2 #$index
-OUTPUT_DIR=/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/processed/it/redpajama-head/1/2/train #$index/train
 mkdir -p $OUTPUT_DIR
 echo "Saving to $OUTPUT_DIR"
 
@@ -46,16 +67,11 @@ python scripts/data_prep/convert_dataset_json.py \
     --concat_tokens 4096 \
     --tokenizer $TOKENIZER \
     --max_tokens 1_000_000_000_000_000 # equivalent to 2000 steps omitt to process whole dataset
-# done
 
+EOF
+chmod 644 $MULTIRUN_DIR/$JOB_NAME.sh
 
+# sbatch $MULTIRUN_DIR/$JOB_NAME.sh
 
-
-
-
-
-
-
-
-
-
+done
+done

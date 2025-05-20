@@ -13,6 +13,7 @@ def parse_args(args=None):
     parser.add_argument("--tokenizer", type=str, default="train", help="Tokenizer path")
     parser.add_argument("--branch", type=str, default="train", help="Tokenizer path")
     parser.add_argument("--dataset", type=str, default="train", help="Dataset to tokenize")
+    parser.add_argument("--name", type=str, default="train", help="Dataset name")
     parser.add_argument("--max_pairs", type=int, default=1, help="Maximum number of pairs to tokenize")
     return parser.parse_args(args)
 
@@ -27,12 +28,13 @@ def main(args=None):
     TOKENIZER_NAME = args.tokenizer #"/leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/tokenizer"
     BRANCH_NAME = args.branch
     DATASET_PATH = args.dataset
+    DATA_NAME = args.name
     MAX_PAIRS = args.max_pairs
     TAG = TOKENIZER_NAME.split("/")[-1]
     print(f"🔤 Loading tokenizer from: {TOKENIZER_NAME}")
 
     tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_NAME, revision=BRANCH_NAME)
-    output_log_path = os.path.join(CURR_DIR, f"output/decoding/{TAG}_{BRANCH_NAME}.txt")
+    output_log_path = os.path.join(CURR_DIR, f"output/decoding/{TAG}_{BRANCH_NAME}_{DATA_NAME}.txt")
     os.makedirs(os.path.dirname(output_log_path), exist_ok=True)
     # Directory that contains your .mds shards
     # dataset_path = os.path.join(CURR_DIR, "output/train")

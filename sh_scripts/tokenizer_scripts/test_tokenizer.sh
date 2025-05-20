@@ -12,21 +12,16 @@ HF_CPT_DIR="$DATA_DIR"/huggingface-cpt
 
 
 TOKENIZER="sapienzanlp/Minerva-7B-base-v1.0"
-# TOKENIZER=/leonardo_scratch/large/userexternal/lcolosi0/.cache/hf_home/hub/foo
-# TOKENIZER="/leonardo_scratch/large/userexternal/$(whoami)/minerva-pretraining/tokenizer"
-# TOKENIZER="/leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/tokenizer"
-# DATASET="/leonardo/home/userexternal/lcolosi0/test-tokenizer-data/train"
-# DATASET="/leonardo_scratch/fast/IscrB_medit/training/minerva-7B-900B_it-900B_en-200B-code-21052024/data/processed/it/culturax-filtered/train"
-# DATASET="/leonardo_scratch/fast/IscrB_medit/training/minerva-7B-900B_it-900B_en-200B-code-21052024/data/processed/it/culturax-filtered/train/"
 DATASET="/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/processed/en/arxiv/train"
-# DATASET=/leonardo/home/userexternal/lcolosi0/test-tokenizer-data/train/
+NAME="arxiv"
 
 echo "Running read_mds.py on $DATASET with tokenizer $TOKENIZER"
 python  $BASE_DIR/tests/tokenizers/experiments/read_mds.py \
     --tokenizer $TOKENIZER \
     --branch main \
     --max_pairs 1 \
-    --dataset $DATASET
+    --dataset $DATASET\
+    --name $NAME
 
 
     # --dataset /leonardo_scratch/fast/IscrB_medit/training/minerva-7B-900B_it-900B_en-200B-code-21052024/data/processed/it/culturax-filtered/train \

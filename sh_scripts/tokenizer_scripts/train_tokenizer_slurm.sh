@@ -20,11 +20,11 @@ export PYENV="$BASE_DIR"/llmfoundry-venv
 source "$PYENV"/bin/activate
 
 DATA_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva/replica
-export HF_HOME="$DATA_DIR"/.cache/hf_home/
+export HF_HOME=/leonardo_scratch/large/userexternal/$(whoami)/.cache/hf_home/
 
 export HF_HUB_OFFLINE=1
 export HF_DATASETS_OFFLINE=1
-export TRANSFORMERS_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1           
 
 cd $BASE_DIR
 

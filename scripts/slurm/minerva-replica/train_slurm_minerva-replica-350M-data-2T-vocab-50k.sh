@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=minerva-replica-350M-data-2T-vocab-50k
+#SBATCH --job-name=minerva-replica
 #SBATCH -o /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/logs/minerva-replica/%x-%j.out
 #SBATCH -e /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/logs/minerva-replica/%x-%j.err
 #SBATCH -A mnrv_bblscp
@@ -23,8 +23,8 @@ export NPROCS=4
 export MASTER_ADDR=$master_addr
 export MASTER_PORT=$master_port
 export WORLD_SIZE=$(($SLURM_NNODES * $NPROCS))
-
 export NCCL_ASYNC_ERROR_HANDLING=1
+
 export HF_HOME=/leonardo_scratch/large/userexternal/lcolosi0/.cache/hf_home/
 export WANDB_MODE=offline
 export HF_TOKEN=$(python -c "import huggingface_hub; print(huggingface_hub.HfFolder.get_token() or '')")

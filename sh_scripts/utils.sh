@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # SOURCE_DIR="/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/redpajamas-head/1"
-SOURCE_DIR="/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/redpajamas-head/9"
+SOURCE_DIR="/leonardo_scratch/large/userexternal/lcolosi0/minerva/data/raw/redpajamas-middle/1"
 cd "$SOURCE_DIR" || { echo "Failed to cd into $SOURCE_DIR"; exit 1; }
 
 d1=1
