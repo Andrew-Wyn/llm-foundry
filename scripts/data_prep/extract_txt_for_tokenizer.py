@@ -51,10 +51,6 @@ def build_hf_dataset(
             streaming=streaming
         )
 
-    # if shuffle:
-    #     print("🔀 Shuffling dataset")
-    #     dataset = dataset.shuffle(seed=seed)
-
     return dataset
 
 def main(dataset, output_file, max_samples, data_type, streaming=False, shuffle=False):

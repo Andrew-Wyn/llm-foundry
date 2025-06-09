@@ -10,7 +10,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:4
-#SBATCH --exclusive
+# ###SBATCH --exclusive
 
 master_port=11111
 master_addr=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
@@ -25,8 +25,15 @@ export MASTER_PORT=$master_port
 export WORLD_SIZE=$(($SLURM_NNODES * $NPROCS))
 export NCCL_ASYNC_ERROR_HANDLING=1
 
+export HF_HUB_OFFLINE=1
+export HF_DATASETS_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1    
+
 export HF_HOME=/leonardo_scratch/large/userexternal/lcolosi0/.cache/hf_home/
 export WANDB_MODE=offline
 export HF_TOKEN=$(python -c "import huggingface_hub; print(huggingface_hub.HfFolder.get_token() or '')")
+
+# export TORCH_NCCL_ENABLE_MONITORING=0
+# export TORCH_NCCL_HEARTBEAT_TIMEOUT_SEC=600
 
 srun /leonardo/home/userexternal/lcolosi0/minerva/llm-foundry/scripts/slurm/minerva-replica/train_minerva-replica-350M-data-2T-vocab-50k.sh

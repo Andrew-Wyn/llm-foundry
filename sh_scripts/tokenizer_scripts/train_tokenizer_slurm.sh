@@ -33,7 +33,7 @@ DATA_ARROW_LIST=(
     /leonardo/prod/data/ai/culturax/2309/it/
     /leonardo/prod/data/ai/culturax/2309/en/
 )
-OUTPUT_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva-pretraining
+OUTPUT_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva
 OUTPUT_DATA_DIR="$OUTPUT_DIR"/tokenizer-data
 OUTPUT_TOKENIZER="$OUTPUT_DIR"/tokenizer-$VOCAB
 # mkdir -p $OUTPUT_DIR # to be on the safe side

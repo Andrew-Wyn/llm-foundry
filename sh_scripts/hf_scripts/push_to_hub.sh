@@ -9,8 +9,8 @@ export HF_HOME="$DATA_DIR"/.cache/hf_home/
 HF_CPT_DIR="$DATA_DIR"/minerva/replica/huggingface-cpt
 
 # Optionally push to main branch
-run_name=
-branch_name=
+run_name=minerva-replica-350M-data-2T-vocab-50k
+branch_name=ba8000
 while true; do
     case "$1" in
         -r | --run_name) run_name="$2"; shift ;;

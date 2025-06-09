@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
 # Replace with your checkpoint name or path
-checkpoint = "/leonardo_scratch/large/userexternal/lcolosi0/minerva-pretraining/huggingface-cpt/minerva-replica-test-scheduler/huggingface/ba500"  # can be local dir or Hugging Face model ID
+checkpoint = "/leonardo_scratch/large/userexternal/lcolosi0/minerva/replica/huggingface-cpt/minerva-replica-350M-data-2T-vocab-50k/huggingface/ba16000"  # can be local dir or Hugging Face model ID
 
 print(f"Loading model and tokenizer from {checkpoint}")
 
@@ -16,7 +16,7 @@ model.to(device)
 
 # Input prompt
 prompt = "Tanto tempo fa in una galassia lontana lontana,"
-prompt = "Ciao io sono "
+# prompt = "Ciao io sono "
 # prompt = "3+3="
 input_ids = tokenizer.encode(prompt, return_tensors="pt").to(device)
 
@@ -35,5 +35,7 @@ output_ids = model.generate(
 
 # Decode and print
 output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+print("\n=== Prompt ===")
+print(prompt)
 print("\n=== Sentence Completion ===")
 print(output_text)

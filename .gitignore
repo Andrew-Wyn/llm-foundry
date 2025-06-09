@@ -162,5 +162,5 @@ notebooks/
 .idea
 *.swp
 logs
-
+log
 

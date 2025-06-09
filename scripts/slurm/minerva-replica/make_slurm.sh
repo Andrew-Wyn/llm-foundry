@@ -66,6 +66,10 @@ export MASTER_ADDR=\$master_addr
 export MASTER_PORT=\$master_port
 export WORLD_SIZE=\$((\$SLURM_NNODES * \$NPROCS))
 
+export HF_HUB_OFFLINE=1
+export HF_DATASETS_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1    
+
 export NCCL_ASYNC_ERROR_HANDLING=1
 export HF_HOME=$HF_HOME
 export WANDB_MODE=offline
