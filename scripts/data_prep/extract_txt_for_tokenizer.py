@@ -26,7 +26,7 @@ def build_hf_dataset(
         if os.path.isdir(dataset_name) and os.path.exists(os.path.join(dataset_name, "dataset_dict.json")):
             print(f"🔹 Loading dataset from disk (saved HF format): {dataset_name}")
             if streaming:
-                print("⚠️  Streaming not supported with `load_from_disk()`. Disabling streaming.")
+                print("Streaming not supported with `load_from_disk()`. Disabling streaming.")
             dataset = load_from_disk(dataset_name)
             if split in dataset:
                 dataset = dataset[split]

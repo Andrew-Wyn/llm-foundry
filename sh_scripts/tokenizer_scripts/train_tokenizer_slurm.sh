@@ -36,9 +36,6 @@ DATA_ARROW_LIST=(
 OUTPUT_DIR=/leonardo_scratch/large/userexternal/$(whoami)/minerva
 OUTPUT_DATA_DIR="$OUTPUT_DIR"/tokenizer-data
 OUTPUT_TOKENIZER="$OUTPUT_DIR"/tokenizer-$VOCAB
-# mkdir -p $OUTPUT_DIR # to be on the safe side
-# mkdir -p $OUTPUT_DATA_DIR # to be on the safe side
-# mkdir -p $OUTPUT_TOKENIZER # to be on the safe side
 
 
 python $BASE_DIR/scripts/data_prep/train_tokenizer.py \
